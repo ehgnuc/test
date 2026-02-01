@@ -46,32 +46,7 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  type: vless
-  server: dfg.octopusss.net
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  servername: one-piece.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-- name: 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  type: vless
-  server: 104.18.32.47
-  port: 80
-  uuid: 4a8d4562-7192-4e83-8a24-75515a1666a3
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: fiT-acADEmyw21824Ac8c.ECoToURISs.cO.Uk.
-- name: 🇩🇪DE_2|2.7MB/s 【❌ 失败】
+- name: 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
   type: vless
   server: 172.67.194.187
   port: 443
@@ -84,89 +59,47 @@ proxies:
     path: /
     headers:
       Host: teams.live.com.afrcloud1.c01.kr
-- name: 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
+- name: 🇺🇸US_1|2.4MB/s 【❌ 失败】
   type: vmess
-  server: cg1c12.waimaojd.com
+  server: 104.168.94.41
+  port: 32301
+  uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41275
+  password: 88c03e37-4c72-4536-be0c-1f171c4627fa
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  type: vmess
+  server: cg1c02.waimaojd.com
   port: 443
   uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: false
-  servername: cg1c12.waimaojd.com
+  servername: cg1c02.waimaojd.com
   network: ws
   ws-opts:
     path: /api/v1/graphql
     headers:
-      Host: cg1c12.waimaojd.com
-- name: 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: 8ce46d62-t9w4g0-tahh2s-tng5.hkt.gotochinatown.net
-  port: 80
-  uuid: 2ec58858-976b-11ea-82ef-f23c9164ca5d
-  alterId: 2
-  cipher: auto
+      Host: cg1c02.waimaojd.com
+- name: 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41277
+  password: a69cad04-a100-4bbf-9928-f9b82f015adf
+  sni: douyin.com
+  skip-cert-verify: true
   tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-- name: 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: 4901d528-t9w4g0-tao3bn-ggww.hkt.gotochinatown.net
-  port: 80
-  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-- name: 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  type: vless
-  server: 104.18.32.47
-  port: 80
-  uuid: e9052516-1e37-4665-a0b4-a5c65dd0ab70
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: TastY-LeaRNInG94aZG31SfF.ECOTouRiss.CO.UK.
-- name: 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: ac02ad1a-t9w4g0-td5oia-1m49t.hkt.gotochinatown.net
-  port: 80
-  uuid: c357a728-1211-11f0-9a65-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-- name: 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  type: vless
-  server: 152.53.51.24
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  servername: one-piece.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-- name: 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
+- name: 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
   type: vless
   server: 212.52.1.143
   port: 443
@@ -178,7 +111,29 @@ proxies:
     path: /danfeng?ed=2560
     headers:
       Host: snippet.fgfw.cc.cd
-- name: 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
+- name: 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  type: vless
+  server: 172.66.128.70
+  port: 80
+  uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
+- name: 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  type: vless
+  server: 104.18.32.47
+  port: 80
+  uuid: 4a8d4562-7192-4e83-8a24-75515a1666a3
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: fit-academyw21824ac8c.ecotouriss.co.uk.
+- name: 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
   type: vless
   server: 104.20.1.252
   port: 80
@@ -189,115 +144,214 @@ proxies:
     path: /?ed
     headers:
       Host: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
-- name: 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  type: vless
-  server: 198.62.62.127
-  port: 443
-  uuid: e6c7ed63-89db-4ae1-a3f8-7a722921b3b2
-  network: ws
-  servername: apii.onlineshoppingez.ir
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /O1w0n3vYgFKYs7EzNAvLPvOp
-    headers:
-      Host: apii.onlineshoppingez.ir
-- name: 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  type: vless
-  server: 104.18.32.47
-  port: 80
-  uuid: a5712440-3cec-4a1b-82e8-767c54acd83a
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: authENTIC-cABinEtgqc4XfW2ud.spORTLAND.COmPAny.
-- name: 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
+- name: 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
   type: vless
   server: 104.20.1.252
   port: 80
-  uuid: ba2bb9d8-9baa-45d6-9e0a-38c9cb6a6a9a
+  uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
   network: ws
   tls: false
   ws-opts:
     path: /?ed
     headers:
-      Host: WeaK-preSSUrE3Ga6bzof92.sPorTlaNd.coMPANY.
-- name: 🇭🇰HK_4|670KB/s 【❌ 失败】
-  type: vmess
-  server: f88be12b-t8lts0-t9jrlv-1atkp.hkt.gotochinatown.net
-  port: 80
-  uuid: 1ec223c0-1ed9-11ec-a8bf-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+      Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
+- name: 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  type: vless
+  server: 8.6.112.0
+  port: 2053
+  uuid: 48792731-6fc9-4415-8b51-6007825daf82
   network: ws
+  servername: ir7.hnbyme.online
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: f88be12b-t8lts0-t9jrlv-1atkp.hkt.gotochinatown.net
-- name: 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
+      Host: ir7.hnbyme.online
+- name: 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
   type: vless
-  server: nodejs.org
-  port: 80
-  uuid: 4c97ec3e-3527-48c5-80ff-b715463896ba
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: kIndhEArTeD-PARkb5Rjo2juEr.sPorTLaNd.COMpAny.
-- name: 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
+  server: mlb.tunnelguard.ru
+  port: 443
+  uuid: a619d576-1380-4aac-8732-99e8dfe8df0f
+  servername: mlb.tunnelguard.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+- name: 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
   type: vless
-  server: nodejs.org
-  port: 80
-  uuid: 33e1a095-1e25-4198-bfe7-ec312e4f98ee
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: CREDibLe-pLaNt7ddV4jJ7et.OnEeaT.CO.
-- name: 🇭🇰HK_5|778KB/s 【❌ 失败】
-  type: vmess
-  server: hkt.gotochinatown.net
-  port: 80
-  uuid: b585dac6-dc69-11ef-9f1c-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hkt.gotochinatown.net
-- name: 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: decdn13.suio.me
+  server: plcdn11.suio.me
   port: 443
   uuid: a7a9f670-44c0-45a9-8047-69db0203c142
-  servername: decdn13.suio.me
+  servername: plcdn11.suio.me
   tls: true
   client-fingerprint: chrome
-- name: 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+- name: 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
   type: vless
-  server: 194.87.240.67
-  port: 443
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  server: 104.18.32.47
+  port: 80
+  uuid: e9052516-1e37-4665-a0b4-a5c65dd0ab70
   network: ws
-  servername: snippet.fgfw.cc.cd
+  tls: false
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: TastY-LeaRNInG94aZG31SfF.ECOTouRiss.CO.UK.
+- name: 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  type: vmess
+  server: 372220e7-t4jj40-tnnrly-g43g.hkt.gotochinatown.net
+  port: 80
+  uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 372220e7-t4jj40-tnnrly-g43g.hkt.gotochinatown.net
+- name: 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  type: vmess
+  server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
+  port: 80
+  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
+- name: 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  type: vmess
+  server: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net
+  port: 80
+  uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net
+- name: 🇭🇰HK_4|747KB/s 【❌ 失败】
+  type: vmess
+  server: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
+  port: 80
+  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
+- name: 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  type: vmess
+  server: 4333a411-t7bj40-tkka1f-1k25p.hkt.gotochinatown.net
+  port: 80
+  uuid: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 4333a411-t7bj40-tkka1f-1k25p.hkt.gotochinatown.net
+- name: 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.155.77
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.154.202
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  type: vmess
+  server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
+  port: 80
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
+- name: 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  type: vmess
+  server: c31c955e-t63340-tao3bn-ggww.hkt.gotochinatown.net
+  port: 80
+  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c31c955e-t63340-tao3bn-ggww.hkt.gotochinatown.net
+- name: 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.155.237
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.154.14
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.154.245
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.155.53
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  type: ss
+  server: 103.186.154.57
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
+  type: vless
+  server: 66.81.247.155
+  port: 443
+  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
+  network: ws
+  servername: pages.dev
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /danfeng?ed=2560
+    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
     headers:
-      Host: snippet.fgfw.cc.cd
+      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
 - name: 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
   type: vless
-  server: 104.18.32.47
+  server: 141.101.123.40
   port: 443
   uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
   network: ws
@@ -308,47 +362,77 @@ proxies:
     path: /ws
     headers:
       Host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
-- name: 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
+- name: 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
   type: vless
-  server: 104.18.32.47
+  server: 162.159.26.212
   port: 443
-  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  uuid: f521fa2c-835e-43e7-b4dc-a1fd6f2ed1dd
   network: ws
-  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  servername: rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /ws
     headers:
-      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
-- name: 🇩🇪DE_11|4.1MB/s 【❌ 失败】
+      Host: rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg
+- name: 🇯🇵JP_2|1.3MB/s 【❌ 失败】
   type: vless
-  server: 104.18.4.130
+  server: 188.114.96.3
   port: 443
-  uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
+  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
   network: ws
-  servername: www.hitgram.ir
+  servername: pages.dev
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed=2560
+    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
     headers:
-      Host: www.hitgram.ir
-- name: 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  type: vmess
-  server: 188.114.98.0
-  port: 8080
-  uuid: nasnet
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
+      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
+- name: 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  type: vless
+  server: dd.openaccessnode.com
+  port: 503
+  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
+  servername: refersion.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs
+    short-id: 1d64e9805b4f9ae3
+- name: 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  type: vless
+  server: 78.159.131.5
+  port: 443
+  uuid: 83dd438b-357b-4060-a633-52e9714afabe
+  servername: al.cdn.stun.su
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
+    short-id: c643c0d6e9222005
+- name: 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  type: vless
+  server: secdn13.suio.me
+  port: 443
+  uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
+  servername: secdn13.suio.me
+  tls: true
+  client-fingerprint: chrome
+- name: 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  type: vless
+  server: 206.238.237.207
+  port: 2053
+  uuid: 8a2240da-25ca-4c95-9c55-26ef2ab70bab
   network: ws
+  servername: vw.badomzamini.uk
+  tls: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
+    path: /latest?ed=2560
     headers:
-      Host: nasnet-162191099.sharghdaily.co
-- name: 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
+      Host: vw.badomzamini.uk
+- name: 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
   type: vless
   server: 188.114.96.3
   port: 443
@@ -361,32 +445,20 @@ proxies:
     path: /
     headers:
       Host: teams.live.com.afrcloud1.c01.kr
-- name: 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
+- name: 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
   type: vless
-  server: 78.159.131.5
+  server: 172.64.152.23
   port: 443
-  uuid: 83dd438b-357b-4060-a633-52e9714afabe
-  servername: al.cdn.stun.su
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
-    short-id: c643c0d6e9222005
-- name: 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  type: vless
-  server: 104.24.69.114
-  port: 443
-  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
   network: ws
-  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  servername: www.hitgram.ir
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /ws
+    path: /--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed=2560
     headers:
-      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
-- name: 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
+      Host: www.hitgram.ir
+- name: 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
   type: vless
   server: 37.120.175.246
   port: 22955
@@ -400,153 +472,668 @@ proxies:
   reality-opts:
     public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
     short-id: 6ba85179e30d4fc2
-- name: 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
+- name: 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
   type: vless
-  server: 172.64.152.23
+  server: 104.18.32.47
+  port: 443
+  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+  network: ws
+  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
+- name: 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  type: vless
+  server: 194.87.240.67
+  port: 443
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  network: ws
+  servername: snippet.fgfw.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: snippet.fgfw.cc.cd
+- name: 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  type: vless
+  server: 43.165.188.165
+  port: 8443
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  type: vless
+  server: 45.121.138.23
+  port: 26688
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  type: vless
+  server: 47.130.35.116
+  port: 8888
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: b7ff9f1d-317d-43d0-ba39-863ba967c48f
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  type: vless
+  server: 13.192.181.130
+  port: 443
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  type: vless
+  server: 137.116.143.137
+  port: 443
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  type: vless
+  server: 132.145.123.25
+  port: 1235
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 5a52a306-a14f-49b8-93f5-4f78fcf9a064
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  type: vless
+  server: 203.232.122.138
+  port: 22022
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: a3239e45-b8ca-4101-bb52-1b60fe7babcb
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  type: vless
+  server: 23.165.248.75
+  port: 443
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 49214
+  password: b8b2710e-eae8-43fa-9497-c41d888469cb
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  type: ss
+  server: sg06.x.yhonline88888.com
+  port: 38657
+  cipher: chacha20-ietf-poly1305
+  password: ee47efb9-6d82-434d-838e-7374c79f5c31
+- name: 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 469a8949-18ae-4db9-bd29-d8690ac53b04
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 2daecbf2-b832-4120-a246-502c964cb2f7
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 441a61b9-d30d-4d28-8d60-622c8520565f
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  type: vless
+  server: 211.228.64.93
+  port: 12504
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: ee138397-5449-4461-9fa8-6a73ffa54dde
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 823f54dd-8cbd-4f7d-b96b-5605b598768f
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 1cc373df-38c2-4657-88a4-0ade0cfa844e
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 05a49a47-43b5-47f5-aef3-4a69d162ef0c
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 4bf978b8-31fc-48dd-8568-46f3dbe9b9b1
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 6db81235-2dcf-4fad-8cce-b2c188e2759a
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 7a30e092-0ff3-4ad0-b89e-ffb551aff8ad
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 96e8ebf5-7c49-49b0-aebd-5b21d2cb1b34
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  type: vless
+  server: 51.89.226.133
   port: 2053
-  uuid: 42c63fdd-8f5f-42c5-8327-4fc7f80de4c2
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
   network: ws
-  servername: vw.badomzamini.uk
+  servername: snippets.sosoco.ggff.net
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /latest?ed=2560
+    path: /proxyip=sjc.o00o.ooo
     headers:
-      Host: vw.badomzamini.uk
-- name: 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
+      Host: snippets.sosoco.ggff.net
+- name: 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
   type: vless
-  server: secdn13.suio.me
+  server: 8.212.21.219
   port: 443
-  uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
-  servername: secdn13.suio.me
-  tls: true
-  client-fingerprint: chrome
-- name: 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  type: vless
-  server: 172.64.152.23
-  port: 443
-  uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
   network: ws
-  servername: www.hitgram.ir
+  servername: snippets.sosoco.ggff.net
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed=2560
+    path: /proxyip=sjc.o00o.ooo
     headers:
-      Host: www.hitgram.ir
-- name: 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
+      Host: snippets.sosoco.ggff.net
+- name: 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41274
+  password: 1bc78dc2-9f34-49d4-b553-389e6d8ec900
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 2ced9a20-60f5-4f05-9b95-c2f6c00f4037
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 49213
+  password: cea30adb-7dc4-469c-8193-4348e2872d32
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 06efed9b-db24-49c2-9d08-2da467ad891b
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 105e96f8-448c-44d5-8061-95d75f2bed2a
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 383a54b6-d8b7-413b-8ffc-a0b6873d924a
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
   type: vless
-  server: my.montago-shop.ir
+  server: 57.129.137.232
   port: 443
-  uuid: 929c6e27-4c24-4775-bc51-0e6117dabd4b
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
   network: ws
-  servername: mx.mahoshid.ir
+  servername: snippets.sosoco.ggff.net
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /?ed=2560
+    path: /proxyip=sjc.o00o.ooo
     headers:
-      Host: mx.mahoshid.ir
-- name: 🇸🇪SE_2|515KB/s 【❌ 失败】
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 398768e4-95c0-485d-957d-cafd87c17a14
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 49213
+  password: 04c2389b-3d87-4b00-81b2-39c9f3b45df3
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
   type: vless
-  server: dd.openaccessnode.com
-  port: 503
-  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-  servername: refersion.com
+  server: 94.23.153.168
+  port: 8443
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
   tls: true
-  client-fingerprint: randomized
-  reality-opts:
-    public-key: aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs
-    short-id: 1d64e9805b4f9ae3
-- name: 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 4020ead7-68cd-4f03-8053-06458289e168
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇺🇸US_7|987KB/s 【🟡 机房|广播】
   type: vless
-  server: hpx.lol
+  server: 27.50.48.50
+  port: 2053
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
+  tls: true
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  type: vless
+  server: 95.40.61.115
   port: 443
-  uuid: 09da6688-1cf3-4318-98c5-aafa59d6e1b9
-  servername: hpx.lol
+  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
+  network: ws
+  servername: snippets.sosoco.ggff.net
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: Ymeaa6zIVOp0ZsRPgt1tgWr64N4NjW3vgS6RgumVSys
-    short-id: f2f79c0b
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: snippets.sosoco.ggff.net
+- name: 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 023df5e8-662a-4db9-b249-4227a201da03
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41273
+  password: 971c0638-47b0-4983-9d61-6f77f59fe91d
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41274
+  password: b6e7df8e-00af-4981-aaa8-7f25a963d8f0
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41275
+  password: a014331b-95af-4620-968a-27fcf1ccd35f
+  sni: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  tls: false
+- name: 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  type: ss
+  server: us04.x.yhonline88888.com
+  port: 38674
+  cipher: chacha20-ietf-poly1305
+  password: ee47efb9-6d82-434d-838e-7374c79f5c31
+- name: 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  type: vless
+  server: 45.144.53.68
+  port: 443
+  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+  servername: ficdn13.suio.me
+  tls: true
+- name: 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41274
+  password: b85ea917-6bd2-444a-99b9-dcd7467edb63
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
+- name: 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41274
+  password: 86d7a1cd-59c8-446c-9e5a-fd9c20523c6a
+  sni: xiaozhu1.kkieo555.cn
+  skip-cert-verify: true
+  tls: false
+- name: 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41274
+  password: 45851e88-e8ab-46d2-b8f8-a830bccc2b59
+  sni: douyin.com
+  skip-cert-verify: true
+  tls: false
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
 - name: ♻️ 自动选择
   type: url-test
   proxies:
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -556,157 +1143,381 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -729,40 +1540,96 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪DE_1|927KB/s 【🟡 机房|原生】
-  - 🇨🇦CA_1|1.8MB/s 【🟢🟡 机房|原生】
-  - 🇩🇪DE_2|2.7MB/s 【❌ 失败】
-  - 🇬🇧GB_1|1.3MB/s 【🟡🟢 机房|广播】
-  - 🇭🇰HK_1|2.5MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_2|2.3MB/s 【⚪ 住宅|原生】
-  - 🇨🇦CA_2|3.3MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_3|1003KB/s 【⚪ 住宅|原生】
-  - 🇦🇹AT_1|2.7MB/s 【🟠⚫ 机房|原生】
-  - 🇸🇬SG_1|3.4MB/s 【🟡 机房|广播】
-  - 🇵🇱PL_1|3.1MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_6|2.1MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_7|2.6MB/s 【🟡🟡 机房|广播】
-  - 🇩🇪DE_8|834KB/s 【🟠 机房|广播】
-  - 🇭🇰HK_4|670KB/s 【❌ 失败】
-  - 🇩🇪DE_9|515KB/s 【🟢 机房|广播】
-  - 🇳🇱NL_1|810KB/s 【⚪ 住宅|广播】
-  - 🇭🇰HK_5|778KB/s 【❌ 失败】
-  - 🇩🇪DE_10|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇸🇬SG_2|6.2MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
+  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
+  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
+  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
+  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
+  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
+  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
+  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
+  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
+  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
+  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
+  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
+  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_4|747KB/s 【❌ 失败】
+  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
+  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
+  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
+  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
+  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
+  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
   - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇫🇷FR_2|2.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_11|4.1MB/s 【❌ 失败】
-  - 🇫🇷FR_3|2.5MB/s 【❌ 失败】
-  - 🇩🇪DE_12|783KB/s 【🟡 机房|广播】
-  - 🇦🇱AL_1|1.0MB/s 【🟡 机房|广播】
-  - 🇫🇷FR_4|1.4MB/s 【🟢🟢 机房|原生】
-  - 🇩🇪DE_13|3.4MB/s 【🟡🔴 机房|原生】
-  - 🇩🇪DE_14|2.8MB/s 【🟢 机房|原生】
-  - 🇸🇪SE_1|3.0MB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_15|840KB/s 【🟡 机房|原生】
-  - 🇩🇪DE_16|842KB/s 【🟡 机房|原生】
-  - 🇸🇪SE_2|515KB/s 【❌ 失败】
-  - 🇩🇪DE_17|2.5MB/s 【🟡🟢 机房|广播】
+  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
+  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
+  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
+  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
+  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
+  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
+  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
+  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
+  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
+  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
+  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
+  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
+  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
+  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
+  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
+  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
+  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
+  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
+  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
+  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
+  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
+  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
+  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
+  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
+  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
+  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
+  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
+  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
+  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
+  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
+  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
+  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
+  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
+  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
+  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
+  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
+  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
+  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
+  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
 rule-providers:
   LocalAreaNetwork:
     type: http
