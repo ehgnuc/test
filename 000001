@@ -9,1627 +9,2247 @@ dns:
   listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
-  - 223.5.5.5
-  - 114.114.114.114
+    - 223.5.5.5
+    - 114.114.114.114
   nameserver:
-  - 223.5.5.5
-  - 114.114.114.114
-  - 119.29.29.29
-  - 180.76.76.76
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-  - '*.lan'
-  - '*.localdomain'
-  - '*.example'
-  - '*.invalid'
-  - '*.localhost'
-  - '*.test'
-  - '*.local'
-  - '*.home.arpa'
-  - router.asus.com
-  - localhost.sec.qq.com
-  - localhost.ptlogin2.qq.com
-  - +.msftconnecttest.com
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
 tun:
   enable: true
   stack: system
   auto-route: true
   auto-detect-interface: true
   dns-hijack:
-  - 114.114.114.114
-  - 180.76.76.76
-  - 119.29.29.29
-  - 223.5.5.5
-  - 8.8.8.8
-  - 8.8.4.4
-  - 1.1.1.1
-  - 1.0.0.1
+    - 114.114.114.114
+    - 180.76.76.76
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 1.0.0.1
 proxies:
-- name: 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  type: vless
-  server: 172.67.194.187
-  port: 443
-  uuid: 21f9985c-d363-4eee-957f-720e9e9f9b8d
-  network: ws
-  servername: teams.live.com.afrcloud1.c01.kr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: teams.live.com.afrcloud1.c01.kr
-- name: 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  type: vmess
-  server: 104.168.94.41
-  port: 32301
-  uuid: a2235b72-fd9c-404f-be5a-53b2de0cb798
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41275
-  password: 88c03e37-4c72-4536-be0c-1f171c4627fa
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  type: vmess
-  server: cg1c02.waimaojd.com
-  port: 443
-  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: cg1c02.waimaojd.com
-  network: ws
-  ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c02.waimaojd.com
-- name: 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41277
-  password: a69cad04-a100-4bbf-9928-f9b82f015adf
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  type: vless
-  server: 212.52.1.143
-  port: 443
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  network: ws
-  servername: snippet.fgfw.cc.cd
-  tls: true
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.fgfw.cc.cd
-- name: 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  type: vless
-  server: 172.66.128.70
-  port: 80
-  uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
-- name: 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  type: vless
-  server: 104.18.32.47
-  port: 80
-  uuid: 4a8d4562-7192-4e83-8a24-75515a1666a3
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: fit-academyw21824ac8c.ecotouriss.co.uk.
-- name: 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  type: vless
-  server: 104.20.1.252
-  port: 80
-  uuid: 5eb9b54d-3c4e-4588-97f7-e53fe3e92c90
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: GLOrioUs-aRriVALHCRtzt96gb.sPORtlANd.cOMPAnY.
-- name: 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  type: vless
-  server: 104.20.1.252
-  port: 80
-  uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
-- name: 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: 8.6.112.0
-  port: 2053
-  uuid: 48792731-6fc9-4415-8b51-6007825daf82
-  network: ws
-  servername: ir7.hnbyme.online
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: ir7.hnbyme.online
-- name: 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  type: vless
-  server: mlb.tunnelguard.ru
-  port: 443
-  uuid: a619d576-1380-4aac-8732-99e8dfe8df0f
-  servername: mlb.tunnelguard.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-- name: 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: plcdn11.suio.me
-  port: 443
-  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
-  servername: plcdn11.suio.me
-  tls: true
-  client-fingerprint: chrome
-- name: 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  type: vless
-  server: 104.18.32.47
-  port: 80
-  uuid: e9052516-1e37-4665-a0b4-a5c65dd0ab70
-  network: ws
-  tls: false
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: TastY-LeaRNInG94aZG31SfF.ECOTouRiss.CO.UK.
-- name: 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  type: vmess
-  server: 372220e7-t4jj40-tnnrly-g43g.hkt.gotochinatown.net
-  port: 80
-  uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 372220e7-t4jj40-tnnrly-g43g.hkt.gotochinatown.net
-- name: 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  type: vmess
-  server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-  port: 80
-  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net
-- name: 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net
-  port: 80
-  uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cef91d7a-t70f40-to8xn3-l4nv.hkt.gotochinatown.net
-- name: 🇭🇰HK_4|747KB/s 【❌ 失败】
-  type: vmess
-  server: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
-  port: 80
-  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
-- name: 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: 4333a411-t7bj40-tkka1f-1k25p.hkt.gotochinatown.net
-  port: 80
-  uuid: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 4333a411-t7bj40-tkka1f-1k25p.hkt.gotochinatown.net
-- name: 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.155.77
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.154.202
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
-  port: 80
-  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
-- name: 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  type: vmess
-  server: c31c955e-t63340-tao3bn-ggww.hkt.gotochinatown.net
-  port: 80
-  uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c31c955e-t63340-tao3bn-ggww.hkt.gotochinatown.net
-- name: 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.155.237
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.154.14
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.154.245
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.155.53
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  type: ss
-  server: 103.186.154.57
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  type: vless
-  server: 66.81.247.155
-  port: 443
-  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
-  network: ws
-  servername: pages.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
-- name: 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: 141.101.123.40
-  port: 443
-  uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
-  network: ws
-  servername: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
-- name: 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: 162.159.26.212
-  port: 443
-  uuid: f521fa2c-835e-43e7-b4dc-a1fd6f2ed1dd
-  network: ws
-  servername: rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg
-- name: 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  type: vless
-  server: 188.114.96.3
-  port: 443
-  uuid: 396c904b-4b62-4334-b793-ee25fc0c61cc
-  network: ws
-  servername: pages.dev
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /eyJqdW5rIjoiTHczMWlhREZIb0ljUDhoaCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
-    headers:
-      Host: 8vmU06cxdz59m931xnREgj8qpnoq1-06.pages.dev
-- name: 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  type: vless
-  server: dd.openaccessnode.com
-  port: 503
-  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
-  servername: refersion.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs
-    short-id: 1d64e9805b4f9ae3
-- name: 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  type: vless
-  server: 78.159.131.5
-  port: 443
-  uuid: 83dd438b-357b-4060-a633-52e9714afabe
-  servername: al.cdn.stun.su
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
-    short-id: c643c0d6e9222005
-- name: 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: secdn13.suio.me
-  port: 443
-  uuid: ba9ddd0d-5ffd-4d40-b76d-df32ecb092a1
-  servername: secdn13.suio.me
-  tls: true
-  client-fingerprint: chrome
-- name: 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  type: vless
-  server: 206.238.237.207
-  port: 2053
-  uuid: 8a2240da-25ca-4c95-9c55-26ef2ab70bab
-  network: ws
-  servername: vw.badomzamini.uk
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /latest?ed=2560
-    headers:
-      Host: vw.badomzamini.uk
-- name: 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  type: vless
-  server: 188.114.96.3
-  port: 443
-  uuid: a44e0875-210f-4941-9062-89b6361a14c6
-  network: ws
-  servername: teams.live.com.afrcloud1.c01.kr
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: teams.live.com.afrcloud1.c01.kr
-- name: 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  type: vless
-  server: 172.64.152.23
-  port: 443
-  uuid: dd0cfef0-fda9-47ec-8a65-49d7bc004f82
-  network: ws
-  servername: www.hitgram.ir
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /--Telegram---MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN?ed=2560
-    headers:
-      Host: www.hitgram.ir
-- name: 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  type: vless
-  server: 37.120.175.246
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
-  network: grpc
-  servername: one-piece.com
-  tls: true
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-- name: 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  type: vless
-  server: 104.18.32.47
-  port: 443
-  uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
-  network: ws
-  servername: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-fr-1.pAriSa.dPdNs.oRg
-- name: 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  type: vless
-  server: 194.87.240.67
-  port: 443
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  network: ws
-  servername: snippet.fgfw.cc.cd
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.fgfw.cc.cd
-- name: 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  type: vless
-  server: 43.165.188.165
-  port: 8443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  type: vless
-  server: 45.121.138.23
-  port: 26688
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  type: vless
-  server: 47.130.35.116
-  port: 8888
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: b7ff9f1d-317d-43d0-ba39-863ba967c48f
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  type: vless
-  server: 13.192.181.130
-  port: 443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  type: vless
-  server: 137.116.143.137
-  port: 443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  type: vless
-  server: 132.145.123.25
-  port: 1235
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 5a52a306-a14f-49b8-93f5-4f78fcf9a064
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  type: vless
-  server: 203.232.122.138
-  port: 22022
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: a3239e45-b8ca-4101-bb52-1b60fe7babcb
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  type: vless
-  server: 23.165.248.75
-  port: 443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 49214
-  password: b8b2710e-eae8-43fa-9497-c41d888469cb
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  type: ss
-  server: sg06.x.yhonline88888.com
-  port: 38657
-  cipher: chacha20-ietf-poly1305
-  password: ee47efb9-6d82-434d-838e-7374c79f5c31
-- name: 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 469a8949-18ae-4db9-bd29-d8690ac53b04
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 2daecbf2-b832-4120-a246-502c964cb2f7
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 441a61b9-d30d-4d28-8d60-622c8520565f
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  type: vless
-  server: 211.228.64.93
-  port: 12504
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: ee138397-5449-4461-9fa8-6a73ffa54dde
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 823f54dd-8cbd-4f7d-b96b-5605b598768f
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 1cc373df-38c2-4657-88a4-0ade0cfa844e
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 05a49a47-43b5-47f5-aef3-4a69d162ef0c
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 4bf978b8-31fc-48dd-8568-46f3dbe9b9b1
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 6db81235-2dcf-4fad-8cce-b2c188e2759a
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 7a30e092-0ff3-4ad0-b89e-ffb551aff8ad
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 96e8ebf5-7c49-49b0-aebd-5b21d2cb1b34
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  type: vless
-  server: 51.89.226.133
-  port: 2053
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  type: vless
-  server: 8.212.21.219
-  port: 443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41274
-  password: 1bc78dc2-9f34-49d4-b553-389e6d8ec900
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 2ced9a20-60f5-4f05-9b95-c2f6c00f4037
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 49213
-  password: cea30adb-7dc4-469c-8193-4348e2872d32
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 06efed9b-db24-49c2-9d08-2da467ad891b
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 105e96f8-448c-44d5-8061-95d75f2bed2a
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 383a54b6-d8b7-413b-8ffc-a0b6873d924a
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  type: vless
-  server: 57.129.137.232
-  port: 443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 398768e4-95c0-485d-957d-cafd87c17a14
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 49213
-  password: 04c2389b-3d87-4b00-81b2-39c9f3b45df3
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  type: vless
-  server: 94.23.153.168
-  port: 8443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 4020ead7-68cd-4f03-8053-06458289e168
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  type: vless
-  server: 27.50.48.50
-  port: 2053
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  type: vless
-  server: 95.40.61.115
-  port: 443
-  uuid: 995e3bbd-6189-456f-bb1c-dff5e86e4466
-  network: ws
-  servername: snippets.sosoco.ggff.net
-  tls: true
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: snippets.sosoco.ggff.net
-- name: 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 023df5e8-662a-4db9-b249-4227a201da03
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41273
-  password: 971c0638-47b0-4983-9d61-6f77f59fe91d
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41274
-  password: b6e7df8e-00af-4981-aaa8-7f25a963d8f0
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41275
-  password: a014331b-95af-4620-968a-27fcf1ccd35f
-  sni: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  tls: false
-- name: 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  type: ss
-  server: us04.x.yhonline88888.com
-  port: 38674
-  cipher: chacha20-ietf-poly1305
-  password: ee47efb9-6d82-434d-838e-7374c79f5c31
-- name: 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  type: vless
-  server: 45.144.53.68
-  port: 443
-  uuid: a7a9f670-44c0-45a9-8047-69db0203c142
-  servername: ficdn13.suio.me
-  tls: true
-- name: 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41274
-  password: b85ea917-6bd2-444a-99b9-dcd7467edb63
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
-- name: 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41274
-  password: 86d7a1cd-59c8-446c-9e5a-fd9c20523c6a
-  sni: xiaozhu1.kkieo555.cn
-  skip-cert-verify: true
-  tls: false
-- name: 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-  type: trojan
-  server: xiaozhu1.kkieo555.cn
-  port: 41274
-  password: 45851e88-e8ab-46d2-b8f8-a830bccc2b59
-  sni: douyin.com
-  skip-cert-verify: true
-  tls: false
+  - name: 🇫🇮FI²_1|0%|GPT|X
+    type: vless
+    server: 31.13.208.3
+    port: 443
+    uuid: f3f6f19f-c68a-462c-a534-9b388663fffa
+    servername: fl.mcqueenconnection.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: O2ttHpVFmwoAf-E1rHgOlv7NggcwxcWkHHen7jkIBjY
+      short-id: 3396f304f579d51f
+  - name: 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+    type: vless
+    server: 45.88.183.79
+    port: 443
+    uuid: 745d8b0e-1bf2-4921-8058-4d67dd3dbc13
+    servername: incdn3.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇩🇪DE²_1|X
+    type: vless
+    server: 104.20.1.252
+    port: 80
+    uuid: 65fe56c2-78ec-417a-a666-9f393eac8b61
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: everlASTinG-oFfERC4S5Mg1918.SpoRTLand.COMpaNy.
+  - name: 🇷🇺RU²_1|X|sinspired/subs-check
+    type: vless
+    server: 89.208.230.52
+    port: 7443
+    uuid: 49aabf68-e986-4722-8fd1-1702ce996bb6
+    servername: eh.vk.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
+      short-id: a20d3ed244c76426
+  - name: 🇺🇸US²_1|YT|X
+    type: vmess
+    server: ggghju.131.pp.ua
+    port: 80
+    uuid: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /Iu415Fpf5REYxWLpTGA5AqzZ2Mj
+      headers:
+        Host: GggHju.131.PP.uA
+  - name: 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+    type: vless
+    server: 104.17.70.206
+    port: 2053
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.fgfw.de5.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.de5.net
+  - name: 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+    type: vless
+    server: 104.17.139.37
+    port: 443
+    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+    network: ws
+    servername: cf.cloudip.ggff.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /pyip%3Dproxyip.cmliussss.net
+      headers:
+        Host: cf.cloudip.ggff.net
+  - name: 🏴‍☠_1🇺🇸 美国 | USA 6|X
+    type: vmess
+    server: bbbnmjki.932.pp.ua
+    port: 80
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /t1UV4HSrzbWGmJtbBhmKb8nOkg
+      headers:
+        Host: bbbnmjki.932.pp.ua
+  - name: 🇨🇦CA²_1|GPT|X
+    type: vless
+    server: 104.18.32.47
+    port: 80
+    uuid: 6abc2840-25fd-4dd7-b1aa-0892fe98f2d9
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: MySterIOUS-chECk94Bl5oXQ6C.eCoTOUriSs.cO.uK.
+  - name: 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+    type: vless
+    server: srv4.outlinekeys.com
+    port: 8443
+    uuid: 3ff03067-b0dd-4361-a21f-27bb9474b9b8
+    servername: sun1-90.userapi.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: m-foGonYn9goyv5U_ffQ-DORHxz4bQ88RIJoim_n228
+  - name: 🇵🇱PL²_2|sinspired/subs-check
+    type: vless
+    server: pol01-rblx01.tcp-reset-club.net
+    port: 443
+    uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
+    servername: hls-svod.itunes.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 86e999a2cdc2
+  - name: 🇩🇪DE²_2|X|sinspired/subs-check
+    type: vless
+    server: 146.19.191.134
+    port: 350
+    uuid: 79a48cba-4a44-4a5c-bfa9-64a53379df2c
+    servername: excoino.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+      short-id: fd1dff03520d8f56
+  - name: 🏴‍☠_4US_c5c7c_0012|X
+    type: vless
+    server: 144.31.1.125
+    port: 443
+    uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+    servername: plcdn11.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🏴‍☠_6_未知_35
+    type: vless
+    server: ccccfff.7777125.xyz
+    port: 80
+    uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+    network: ws
+    tls: false
+    ws-opts:
+      path: /v4mECBsrKh5tvsvinsGGg
+      headers:
+        Host: cCccfff.7777125.XYZ
+  - name: 🇩🇪DE²_3|GPT|X
+    type: vless
+    server: 64.188.67.193
+    port: 444
+    uuid: 40b1e510-6017-48f4-b3db-2486805a2395
+    servername: sun6-22.userapi.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: FguUYp-QbjkcMYcNeNxEJ_IVqd5y4NZjokAkae4IyXw
+      short-id: bbbf95fa
+  - name: 🇵🇱PL²_5|GPT|X
+    type: vless
+    server: plcdn2.suio.me
+    port: 443
+    uuid: a7a9f670-44c0-45a9-8047-69db0203c142
+    servername: plcdn2.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇺🇸US²_3|GPT|X
+    type: vless
+    server: 104.21.90.226
+    port: 443
+    uuid: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc
+    network: ws
+    servername: 444RRrt5.7777155.xYZ
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /6OWLjRc26b0nHYr5hYXD
+      headers:
+        Host: 444rrrt5.7777155.xyz
+  - name: 🇺🇸US²_4|sinspired/subs-check
+    type: vless
+    server: rrrt.7777125.xyz
+    port: 443
+    uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990
+    servername: www.iea.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: NEA9qC5EkYvj9QFHilouy8HggxeRlg1jTXPZ_vnXa1w
+      short-id: 9a29f7ed708f40
+  - name: 🇸🇬SG¹⁺_1|GPT|X
+    type: vless
+    server: 194.87.240.67
+    port: 443
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.fgfw.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.cc.cd
+  - name: 🇺🇸US²_6|31%|sinspired/subs-check
+    type: vless
+    server: nnnMjKUI.932.PP.UA
+    port: 80
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    network: ws
+    tls: false
+    ws-opts:
+      path: /2tdYeANMcPjPXU4ItkD5XgXAL
+      headers:
+        Host: NnNmJKUI.932.Pp.ua
+  - name: 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+    type: vless
+    server: fffbnhju.taipei102.indevs.in
+    port: 80
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    network: ws
+    tls: false
+    ws-opts:
+      path: /391sfnZ2bBhmKb8nOkg
+      headers:
+        Host: fffbnhju.taipei102.indevs.in
+  - name: 🏴‍☠_9SG VLESS-128 | free-nodes
+    type: vless
+    server: 146.190.85.213
+    port: 45989
+    uuid: fa7ea4ac-1ed6-467a-ae18-2099ed2bb4ae
+    servername: apple.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: YmPBYhQjKnaKKGDHQb6xxjvPw3nenm59T1ssG0KFcj0
+      short-id: 1f13df2cb7
+  - name: 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+    type: vless
+    server: srv4.outlinekeys.com
+    port: 8443
+    uuid: 59edf6dc-b1f7-4017-8107-aae4f61a173c
+    servername: sun1-90.userapi.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: m-foGonYn9goyv5U_ffQ-DORHxz4bQ88RIJoim_n228
+  - name: 🇭🇰HK¹⁺_2|sinspired/subs-check
+    type: vless
+    server: 104.26.3.162
+    port: 443
+    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+    network: ws
+    servername: cf.cloudip.ggff.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /pyip%3Dproxyip.cmliussss.net
+      headers:
+        Host: cf.cloudip.ggff.net
+  - name: 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+    type: vmess
+    server: 2abcdbc9-t9zts0-tarubk-1qkeg.hkt.gotochinatown.net
+    port: 80
+    uuid: a305ac08-d136-11ee-b6db-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇺🇸US²_10|GPT|X|sinspired/subs-check
+    type: vless
+    server: vvvbnj.taipei102.indevs.in
+    port: 80
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    network: ws
+    tls: false
+    ws-opts:
+      path: /391sfnZ2bBhmKb8nOkg
+      headers:
+        Host: vvvbnj.taipei102.indevs.in
+  - name: 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+    type: vless
+    server: 144.34.233.47
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: jp-aniu.xmmaa.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: jp-aniu.xmmaa.dpdns.org
+  - name: 🇺🇸US²_11|X
+    type: vless
+    server: 94.183.183.196
+    port: 1080
+    uuid: 3ff03067-b0dd-4361-a21f-27bb9474b9b8
+    servername: web.max.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Y0ieBCIqB5ojcMWSxXK_6y5ZWlpctgGyBSQqNAjK6lw
+  - name: 🇳🇱NL²_6|X
+    type: vless
+    server: 51.158.206.96
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: 🇭🇰HK²_7|YT|X
+    type: vmess
+    server: dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net
+    port: 80
+    uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dd1b8960-t70f40-t7fz1r-8rja.hkt.gotochinatown.net
+  - name: 🇭🇰HK²_8|YT|X|sinspired/subs-check
+    type: vmess
+    server: 7c7fdc87-t9w4g0-tb224g-1h0r9.hkt.gotochinatown.net
+    port: 80
+    uuid: 9bfd0dde-957e-11ec-a8bf-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇺🇸US¹-SG⁰_1|5%|Succeed
+    type: vless
+    server: 104.17.71.206
+    port: 2053
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.fgfw.de5.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.de5.net
+  - name: 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+    type: vless
+    server: 154.194.0.228
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: jp-aniu.xmmaa.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: jp-aniu.xmmaa.dpdns.org
+  - name: 🇭🇰HK²_9
+    type: vmess
+    server: d9ba656d-t66sg0-t7mzec-yjq0.hkt.gotochinatown.net
+    port: 80
+    uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: d9ba656d-t66sg0-t7mzec-yjq0.hkt.gotochinatown.net
+  - name: 🇭🇰HK²_10|X|sinspired/subs-check
+    type: vmess
+    server: ce363c51-t9zts0-tkka1f-1k25p.hkt.gotochinatown.net
+    port: 80
+    uuid: 6e8482fb-1f9b-11ed-af5f-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+    type: vless
+    server: 104.225.145.36
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: jp-aniu.xmmaa.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: jp-aniu.xmmaa.dpdns.org
+  - name: 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+    type: vless
+    server: nrt.xxxxxxxx.nyc.mn
+    port: 2053
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.fgfw.ccwu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.ccwu.cc
+  - name: 🇺🇸US²_17|GPT|X|sinspired/subs-check
+    type: vless
+    server: gggbnh.www890604.dpdns.org
+    port: 80
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    network: ws
+    tls: false
+    ws-opts:
+      path: /391sfnZ2bBhmKb8nOkg
+      headers:
+        Host: gggbnh.www890604.dpdns.org
+  - name: 🇭🇰HK²_12|1%|X|sinspired/subs-check
+    type: vmess
+    server: 21cb6ba2-t9xz40-tds6bp-1hzyr.hkt.gotochinatown.net
+    port: 80
+    uuid: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+    type: vless
+    server: incdn3.suio.me
+    port: 443
+    uuid: 745d8b0e-1bf2-4921-8058-4d67dd3dbc13
+    servername: incdn3.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇯🇵JP²_2|1%|GPT⁺|X
+    type: trojan
+    server: 153.121.45.139
+    port: 3423
+    password: c1d83c0c7d57cead4379ba14a82df69b
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+    tls: true
+  - name: 🇯🇵JP²_3|X
+    type: trojan
+    server: 160.16.68.250
+    port: 3423
+    password: c1d83c0c7d57cead4379ba14a82df69b
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+    tls: true
+  - name: 🇷🇺RU²_2
+    type: vless
+    server: ip.hamrahto.com
+    port: 8443
+    uuid: 8e32b948-54ca-41c6-b02b-5eb79a8316fc
+    network: ws
+    servername: hm33333.mutee.com.tr
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: hm33333.mutee.com.tr
+  - name: 🇮🇹IT²_2|GPT⁺|X
+    type: vless
+    server: 85.235.149.184
+    port: 500
+    uuid: e6af2417-0a79-4521-aa2a-de1c2f105188
+    servername: stackoverflow.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: NGrcCvAGrXu9QMiu2QNZy2HBqbvL7j-cFQuTFbE-AjM
+      short-id: bea5eb2fcf6b183c
+  - name: 🇭🇰HK²_13|X|sinspired/subs-check
+    type: vmess
+    server: f73eab3b-t9w4g0-ta6lxc-jjv2.hkt.gotochinatown.net
+    port: 80
+    uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇺🇸US¹-SG⁰_2
+    type: vless
+    server: 45.130.125.160
+    port: 443
+    uuid: ea33fc71-2ce3-48e1-93fb-e36142c1e1ee
+    network: ws
+    servername: afrcloud4.c01.kr
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /152.42.236.151:8443
+      headers:
+        Host: afrcloud4.c01.kr
+  - name: 🇺🇸US⁻¹_1|GM
+    type: vless
+    server: 45.130.125.160
+    port: 443
+    uuid: ea33fc71-2ce3-48e1-93fb-e36142c1e1ee
+    network: ws
+    servername: afrcloud4.c01.kr
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /129.150.58.86:57621/?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
+      headers:
+        Host: afrcloud4.c01.kr
+  - name: 🇭🇰HK²_15|YT|X
+    type: vmess
+    server: 8db4fbc0-t9xz40-thiwul-1gcq2.hkt.gotochinatown.net
+    port: 80
+    uuid: 759bf004-6137-11ec-bd7c-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇺🇸US²_21|GPT|X
+    type: vmess
+    server: 216.75.145.237
+    port: 110
+    uuid: a5a25715-1553-4586-949d-3bb0fb87cbcd
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇭🇰HK²_16|1%|X
+    type: vmess
+    server: 3a43b02c-t9w4g0-tc61cs-1tja8.hkt.gotochinatown.net
+    port: 80
+    uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇺🇸US²_22|X|sinspired/subs-check
+    type: vmess
+    server: GGBnh.7777198.XYz
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: GGBnh.7777198.XYz
+    network: ws
+    ws-opts:
+      path: /GgigazFGDLgFWDItkD5XgXAL
+      headers:
+        Host: GgbNH.7777198.xyZ
+  - name: 🇸🇬SG²_13|GM|X|Succeed
+    type: trojan
+    server: 160.16.106.99
+    port: 3076
+    password: c1d83c0c7d57cead4379ba14a82df69b
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+    tls: true
+  - name: 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+    type: vless
+    server: 162.159.254.137
+    port: 2053
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.sh21.eu.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.sh21.eu.org
+  - name: 🇫🇷FR²_1
+    type: vless
+    server: 62.210.91.10
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+    type: vless
+    server: www.gov.se
+    port: 443
+    uuid: 25577310-a767-4b2c-90c6-9fcf4bb387f0
+    network: ws
+    servername: fffb57cc.tacgne.pages.dev
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /
+      headers:
+        Host: fffb57cc.tacgne.pages.dev
+  - name: 🇮🇹IT²_3|sinspired/subs-check
+    type: vless
+    server: srv10.outlinekeys.com
+    port: 443
+    uuid: ce7f5e28-d72d-4006-8d70-f428a4721910
+    servername: srv10.outlinekeys.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+  - name: 🇭🇰HK²_17|X
+    type: vmess
+    server: 3ec84fb0-t9zts0-tahh2s-tng5.hkt.gotochinatown.net
+    port: 80
+    uuid: 2ec58858-976b-11ea-82ef-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇨🇦CA²_3|X
+    type: vless
+    server: 104.20.1.252
+    port: 80
+    uuid: 1a94fbd9-79d2-4aa7-bf1d-074f678d27ab
+    network: ws
+    tls: false
+    ws-opts:
+      path: /?ed
+      headers:
+        Host: EqUiPPed-phOToZkoA7K5e6P.eCoTOuRiss.Co.uk.
+  - name: 🇭🇰HK²_18|0%|sinspired/subs-check
+    type: vless
+    server: vip2.kaixincloud.top
+    port: 443
+    uuid: 9523a24b-f6bf-339e-9950-32829162ffc2
+    network: ws
+    servername: dabaif0.webn.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /db1024f4e56f542c
+      headers:
+        Host: dabaif0.webn.cc
+  - name: 🇯🇵JP²_5|YT-RU
+    type: trojan
+    server: 160.16.106.99
+    port: 3423
+    password: c1d83c0c7d57cead4379ba14a82df69b
+    sni: www.nintendogames.net
+    skip-cert-verify: true
+    tls: true
+  - name: 🇺🇸US²_23|X|sinspired/subs-check
+    type: vless
+    server: fFfBGH.HuaNgSHaNG.OnLine
+    port: 80
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    network: ws
+    tls: false
+    ws-opts:
+      path: /2tdYeANMcPjPXU4ItkD5XgXAL
+      headers:
+        Host: FFfBgH.hUaNGsHAnG.onlinE
+  - name: 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+    type: vmess
+    server: 9272ff1f-t9w4g0-tcfo40-17xo8.hkt.gotochinatown.net
+    port: 80
+    uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇬🇧GB²_5
+    type: vmess
+    server: v36.hdacd.com
+    port: 30836
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: 🇭🇰HK¹-CA⁰_1|X
+    type: vless
+    server: 172.67.74.159
+    port: 2083
+    uuid: 6ef1b079-e936-4c37-b4b4-8e59baf31eb8
+    network: ws
+    servername: yxk.longlivecpc.dpdns.org
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /proxyip=ProxyIP.Oracle.cmliussss.net
+      headers:
+        Host: yxk.longlivecpc.dpdns.org
+  - name: 🇭🇰HK¹⁺_3
+    type: vless
+    server: 162.159.140.116
+    port: 443
+    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+    network: ws
+    servername: cf.cloudip.ggff.net
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /pyip=proxyip.cmliussss.net
+      headers:
+        Host: cf.cloudip.ggff.net
+  - name: 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+    type: vless
+    server: 162.159.61.183
+    port: 443
+    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+    network: ws
+    servername: cf.cloudip.ggff.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /pyip%3Dproxyip.cmliussss.net
+      headers:
+        Host: cf.cloudip.ggff.net
+  - name: 🇮🇳IN²_3|X|sinspired/subs-check
+    type: trojan
+    server: hyfuuf6.wsone.icu
+    port: 443
+    password: M7v%w11Se*
+    sni: hyfuuf6.wsone.icu
+    skip-cert-verify: false
+    tls: true
+  - name: 🇭🇰HK²_20|Succeed
+    type: vmess
+    server: 80c50e6f-t9w4g0-ts3rye-mrtr.hkt.gotochinatown.net
+    port: 80
+    uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇺🇸US²_24|sinspired/subs-check
+    type: vless
+    server: us01-vlr01-gmn03.vpnvezdehod.net
+    port: 443
+    uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
+    servername: hls-svod.itunes.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 8453e5fd9af927
+  - name: 🇭🇰HK¹-US⁰_1|X
+    type: vless
+    server: 173.245.59.42
+    port: 2053
+    uuid: 6ef1b079-e936-4c37-b4b4-8e59baf31eb8
+    network: ws
+    servername: yxk.longlivecpc.dpdns.org
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /proxyip=ProxyIP.Oracle.cmliussss.net
+      headers:
+        Host: yxk.longlivecpc.dpdns.org
+  - name: 🇺🇸US²_26|YT-CN|sinspired/subs-check
+    type: vless
+    server: vip2.kaixincloud.top
+    port: 8443
+    uuid: 572a0d47-567c-4085-a2de-69cc41365a27
+    network: ws
+    servername: rncf.wwxgxn.cfd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /sayuri
+      headers:
+        Host: rncf.wwxgxn.cfd
+  - name: 🇸🇪SE²_2|7%|sinspired/subs-check
+    type: vless
+    server: secdn13.suio.me
+    port: 443
+    uuid: 745d8b0e-1bf2-4921-8058-4d67dd3dbc13
+    servername: secdn13.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇭🇰HK²_21|1%|YT|X|Succeed
+    type: vmess
+    server: hkt.gotochinatown.net
+    port: 80
+    uuid: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hkt.gotochinatown.net
+  - name: 🇫🇷FR²_3|X
+    type: vless
+    server: 69.84.182.20
+    port: 443
+    uuid: 85462399-8624-4e5c-bbb0-f95d84ca8256
+    network: ws
+    servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+      headers:
+        Host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  - name: 🇵🇹PT²_1|X
+    type: trojan
+    server: 80.173.231.254
+    port: 12420
+    password: wp9IsiY82uQhcmgNC1eoBM
+    sni: www.semanticstaplegun.click
+    skip-cert-verify: false
+    tls: true
+  - name: 🇩🇪DE²_8|X|sinspired/subs-check
+    type: vmess
+    server: 172.67.73.163
+    port: 8080
+    uuid: nasnet
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /nasnet/cdn
+      headers:
+        Host: nasnet-571296497.iranpress.co
+  - name: 🇰🇷KR²_5|GPT|X
+    type: vmess
+    server: 152.70.92.69
+    port: 80
+    uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: http
+    http-opts:
+      path: /
+  - name: 🇹🇷TR²_1
+    type: vless
+    server: photodatas.lunamaku.ir
+    port: 443
+    uuid: e5bb092c-2b3c-053c-2bf2-e674bd333ad3
+    network: ws
+    servername: tr2.weedpanel.site
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+      headers:
+        Host: tr2.weedpanel.site
+  - name: 🇫🇮FI²_2|X|sinspired/subs-check
+    type: vless
+    server: ficdn21.suio.me
+    port: 443
+    uuid: 745d8b0e-1bf2-4921-8058-4d67dd3dbc13
+    servername: ficdn21.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇺🇸US²_27|X|sinspired/subs-check
+    type: vless
+    server: BbbFbgh.IRAN.pP.ua
+    port: 443
+    uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03
+    network: ws
+    servername: bBBfbGh.iRAn.Pp.ua
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /2tdYeANMcPjPXU4ItkD5XgXAL
+      headers:
+        Host: bBBFBgH.iraN.Pp.uA
+  - name: 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+    type: vless
+    server: 15.204.97.219
+    port: 23576
+    uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+    servername: fuck.rkn
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+      short-id: "01"
+  - name: 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+    type: vless
+    server: vvbg.191262.xyz
+    port: 443
+    uuid: 4a7baca1-8048-4a91-8316-595b36657a54
+    servername: www.aljazeera.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WAmg2ZhiUT_W4Co9OEQL5u40eBFD3dhxX83mfsX4MGo
+      short-id: b8b4fb16
+  - name: 🇺🇸US²_28|sinspired/subs-check
+    type: vless
+    server: osn.takovpn.ru
+    port: 443
+    uuid: 562eb7c0-f526-4572-b10d-3d083efcd791
+    servername: google.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ihtXyG0UidSbXjvCJXUhABwZGCCB62DUsVBFn_qVd3g
+      short-id: 1283729a0a9c1f
+  - name: 🇩🇪DE²_9|X|sinspired/subs-check
+    type: vless
+    server: de.rakslinevpn.su
+    port: 443
+    uuid: 56d1d355-92c9-4a9c-91e4-327d29d9a82f
+    servername: rawi.su
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: NOxspweRibeT4z1VwIkVqM97cYxkttYAXIbFrGivQy8
+      short-id: 6764c8389d65daa3
+  - name: 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+    type: vless
+    server: 104.19.148.121
+    port: 443
+    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+    network: ws
+    servername: cf.cloudip.ggff.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /pyip%3Dproxyip.cmliussss.net
+      headers:
+        Host: cf.cloudip.ggff.net
+  - name: 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+    type: vless
+    server: 89.208.245.134
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: jp-aniu.xmmaa.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: jp-aniu.xmmaa.dpdns.org
+  - name: 🇭🇰HK⁻¹_1
+    type: vless
+    server: 27.50.48.50
+    port: 2053
+    uuid: 697f10a9-a849-3fec-7173-a4213b9a6378
+    network: ws
+    servername: 4efd71de.lfree.ccwu.cc
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /2026
+      headers:
+        Host: 4efd71de.lfree.ccwu.cc
+  - name: 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+    type: vless
+    server: ita01-vlr01.tcp-reset-club.net
+    port: 443
+    uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
+    servername: hls-svod.itunes.apple.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+      short-id: 48720c
+  - name: 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+    type: vless
+    server: legion.lenovo.com
+    port: 2053
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.fgfw.de5.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.de5.net
+  - name: 🇩🇪DE²_10|X
+    type: vless
+    server: 104.18.32.47
+    port: 443
+    uuid: 258bad91-733a-4e6a-96f4-11568b97c04a
+    network: ws
+    servername: rAyAn-cOnFiG-de-1.pAriSa.dPdNs.oRg
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+      headers:
+        Host: rAyAn-cOnFiG-de-1.pAriSa.dPdNs.oRg
+  - name: 🇭🇰HK¹-CA⁰_3|X
+    type: vless
+    server: 108.162.198.154
+    port: 2096
+    uuid: 6ef1b079-e936-4c37-b4b4-8e59baf31eb8
+    network: ws
+    servername: yxk.longlivecpc.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip=ProxyIP.Oracle.cmliussss.net
+      headers:
+        Host: yxk.longlivecpc.dpdns.org
+  - name: 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+    type: vless
+    server: www.ntu.edu.sg
+    port: 8443
+    uuid: 572a0d47-567c-4085-a2de-69cc41365a27
+    network: ws
+    servername: rncf.wwxgxn.cfd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /sayuri
+      headers:
+        Host: rncf.wwxgxn.cfd
+  - name: 🇸🇪SE²_3|sinspired/subs-check
+    type: vless
+    server: 193.23.200.223
+    port: 443
+    uuid: 745d8b0e-1bf2-4921-8058-4d67dd3dbc13
+    servername: secdn16.suio.me
+    tls: true
+    client-fingerprint: chrome
+  - name: 🇺🇸US²_29|sinspired/subs-check
+    type: vless
+    server: 5.34.179.145
+    port: 3443
+    uuid: ae4cedeb-f85e-405c-bb91-b51fb34c2e0f
+    servername: google.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: qq
+    reality-opts:
+      public-key: CsUm6jBZvd5KzFN8Klm9KYF5kiUmztspcA9InbcnwXM
+      short-id: e49b4e3d5f46d5c2
+  - name: 🇭🇰HK²_22|sinspired/subs-check
+    type: vmess
+    server: 699db5f0-t9xz40-tdq1ln-1hpo0.hkt.gotochinatown.net
+    port: 80
+    uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇭🇰HK¹-CA⁰_4|5%|X
+    type: vless
+    server: 162.159.61.183
+    port: 443
+    uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+    network: ws
+    servername: cf.cloudip.ggff.net
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /pyip=proxyip.cmliussss.net
+      headers:
+        Host: cf.cloudip.ggff.net
+  - name: 🇰🇿KZ²_1|sinspired/subs-check
+    type: vless
+    server: maxru.outlinekeys.net
+    port: 443
+    uuid: f1870ac5-ab5f-4255-965d-4a0476cb0b1a
+    servername: maxru.outlinekeys.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zkeQCEkz7LlrzwzeG26Ae_HEk3_QlgM9CbiWJx5iWh0
+  - name: 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+    type: vless
+    server: 80.251.213.187
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: jp-aniu.xmmaa.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: jp-aniu.xmmaa.dpdns.org
+  - name: 🇺🇸US²_30|2%|GPT|X
+    type: vmess
+    server: rrrrrrrrrrrghhh.857657.xyz
+    port: 80
+    uuid: a5e71861-2fba-4040-a8e4-a215305f37c4
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /bkIJxIKIV4ENhXs7
+      headers:
+        Host: rrrrrrrrrrrghhh.857657.xyz
+  - name: 🇸🇬SG²_15|GPT|X|Succeed
+    type: vless
+    server: 141.193.213.21
+    port: 2053
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.danfeng.de5.net
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.danfeng.de5.net
+  - name: 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+    type: vless
+    server: 167.179.76.8
+    port: 443
+    uuid: e258977b-e413-4718-a3af-02d75492c349
+    network: ws
+    servername: jp-aniu.xmmaa.dpdns.org
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: jp-aniu.xmmaa.dpdns.org
+  - name: 🇸🇬SG²_16
+    type: trojan
+    server: 160.16.116.227
+    port: 544
+    password: c1d83c0c7d57cead4379ba14a82df69b
+    sni: www.nintendogames.net
+    skip-cert-verify: false
+    tls: true
+  - name: 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+    type: vless
+    server: 194.247.187.244
+    port: 443
+    uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+    network: ws
+    servername: snippet.fgfw.cc.cd
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /danfeng
+      headers:
+        Host: snippet.fgfw.cc.cd
+  - name: 🇭🇰HK²_23|1%|X
+    type: vmess
+    server: 92c73b3e-t9w4g0-thd0h1-1rz5s.hkt.gotochinatown.net
+    port: 80
+    uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b
+    alterId: 2
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: broadcastlv.chat.bilibili.com
+  - name: 🇫🇷FR²_4
+    type: vless
+    server: v1.dabache.top
+    port: 443
+    uuid: 8388434b-bbc8-4e00-b497-69a7f56f6e24
+    network: ws
+    servername: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+      headers:
+        Host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
+  - name: 🇦🇲AM²_1|sinspired/subs-check
+    type: vless
+    server: 77.91.68.70
+    port: 55983
+    uuid: f667a096-5231-4cfb-8759-92bb32473139
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+      short-id: 0e
+  - name: 🇺🇸US²_32|X|sinspired/subs-check
+    type: vmess
+    server: gggbnh7.www890604.dpdns.org
+    port: 443
+    uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: gggbnh7.www890604.dpdns.org
+    network: ws
+    ws-opts:
+      path: /t1UV4HSrzbWGmJtbBhmKb8nOkg
+      headers:
+        Host: gggbnh7.www890604.dpdns.org
+  - name: 🇺🇸US²_33|42%|X
+    type: vless
+    server: us-2.bot-iphone.ru
+    port: 8443
+    uuid: 9c42819a-67a6-4742-9c6d-64900ba62160
+    servername: samsung.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: 6ba85179e30d4fc2
+  - name: 🇱🇻LV²_2|42%|YT-RU
+    type: vless
+    server: srv6.outlinekeys.com
+    port: 443
+    uuid: 59edf6dc-b1f7-4017-8107-aae4f61a173c
+    servername: srv6.outlinekeys.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
+  - name: 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+    type: vless
+    server: 104.16.189.3
+    port: 443
+    uuid: 68c89f56-3a15-46f2-9901-8c00a2546b97
+    network: ws
+    servername: rukawa.pages.dev
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /
+      headers:
+        Host: rukawa.pages.dev
+  - name: 🇭🇰HK¹-US⁰_2|YT-SG
+    type: vless
+    server: 8.39.125.176
+    port: 2087
+    uuid: 6ef1b079-e936-4c37-b4b4-8e59baf31eb8
+    network: ws
+    servername: yxk.longlivecpc.dpdns.org
+    tls: true
+    client-fingerprint: random
+    ws-opts:
+      path: /proxyip=ProxyIP.Oracle.cmliussss.net
+      headers:
+        Host: yxk.longlivecpc.dpdns.org
+  - name: 🇸🇬SG²_17|0%|GPT|X
+    type: vless
+    server: transferwise.com
+    port: 443
+    uuid: 979b6822-d65a-400d-89f8-30391903ac20
+    network: ws
+    servername: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /ws
+      headers:
+        Host: rAyAn-cOnFiG-uk-1.pArSa.dPdNs.oRg
+  - name: 🇩🇪DE²_11
+    type: vless
+    server: imgur.com
+    port: 80
+    uuid: 2a4f0318-117b-4d1b-994b-692267ec3cc1
+    network: ws
+    tls: false
+    ws-opts:
+      path: /containers/fi
+      headers:
+        Host: shotornet.global.ssl.fastly.net
 proxy-groups:
-- name: 🚀 节点选择
-  type: select
-  proxies:
-  - ♻️ 自动选择
-  - DIRECT
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-- name: ♻️ 自动选择
-  type: url-test
-  proxies:
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
-- name: 🌍 国外媒体
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🎯 全球直连
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-- name: 📲 电报信息
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-- name: Ⓜ️ 微软服务
-  type: select
-  proxies:
-  - 🎯 全球直连
-  - 🚀 节点选择
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-- name: 🍎 苹果服务
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
-- name: 🎯 全球直连
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-- name: 🛑 全球拦截
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 🍃 应用净化
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 🐟 漏网之鱼
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - ♻️ 自动选择
-  - 🇩🇪DE_1|3.4MB/s 【🟡 机房|广播】
-  - 🇺🇸US_1|2.4MB/s 【❌ 失败】
-  - 🇺🇸US_2|1.9MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_3|1.6MB/s 【❌ 失败】
-  - 🇸🇬SG_1|1.1MB/s 【❌ 失败】
-  - 🇸🇬SG_2|4.9MB/s 【🔴 机房|广播】
-  - 🇨🇦CA_1|1.7MB/s 【🟢 机房|原生】
-  - 🇨🇦CA_2|1.2MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_1|2.0MB/s 【⚫🟡 机房|广播】
-  - 🇨🇦CA_3|2.1MB/s 【🟢 机房|原生】
-  - 🇳🇱NL_1|946KB/s 【🟡🟢 机房|广播】
-  - 🇲🇩MD_1|2.9MB/s 【🟡 机房|原生】
-  - 🇵🇱PL_2|1.8MB/s 【🟡🟢 机房|广播】
-  - 🇨🇦CA_4|3.4MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_1|5.1MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_2|1.7MB/s 【⚪🟢 住宅|原生】
-  - 🇭🇰HK_3|2.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_4|747KB/s 【❌ 失败】
-  - 🇭🇰HK_5|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_1|839KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_2|987KB/s 【🟢 机房|原生】
-  - 🇭🇰HK_6|544KB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_7|2.1MB/s 【⚪ 住宅|原生】
-  - 🇻🇳VN_3|742KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_4|729KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_5|863KB/s 【🟢 机房|原生】
-  - 🇻🇳VN_6|1.1MB/s 【🟢 机房|原生】
-  - 🇻🇳VN_7|711KB/s 【🟢 机房|原生】
-  - 🇯🇵JP_1|2.8MB/s 【🟡 机房|原生】
-  - 🇫🇷FR_1|1.4MB/s 【🟡🟢 机房|广播】
-  - 🇹🇷TR_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇯🇵JP_2|1.3MB/s 【❌ 失败】
-  - 🇸🇪SE_1|3.5MB/s 【⚪ 住宅|原生】
-  - 🇦🇱AL_1|2.0MB/s 【🟡 机房|广播】
-  - 🇸🇪SE_2|904KB/s 【🟡🟢 机房|广播】
-  - 🇩🇪DE_5|2.0MB/s 【🟢 机房|原生】
-  - 🇩🇪DE_6|2.6MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_7|651KB/s 【🟢 机房|广播】
-  - 🇩🇪DE_8|3.8MB/s 【🟡🔴 机房|原生】
-  - 🇫🇷FR_2|679KB/s 【🟡 机房|原生】
-  - 🇸🇬SG_3|2.9MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_9|2.8MB/s 【🟡 机房|原生】
-  - 🇭🇰HK_8|931KB/s 【🟡 机房|广播】
-  - 🇺🇸US_4|5.0MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_3|3.4MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_10|2.7MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_11|2.2MB/s 【🟡 机房|广播】
-  - 🇺🇸US_5|689KB/s 【⚪ 机房|原生】
-  - 🇯🇵JP_4|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇰🇷KR_1|867KB/s 【🟡 机房|广播】
-  - 🇯🇵JP_5|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇩🇪DE_12|2.6MB/s 【🟡 机房|广播】
-  - 🇰🇷KR_2|721KB/s 【⚫🔴 机房|广播】
-  - 🇸🇬SG_4|582KB/s 【🟠⚫ 机房|广播】
-  - 🇯🇵JP_6|1.5MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_7|1.8MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_8|2.6MB/s 【🟠⚫ 机房|原生】
-  - 🇺🇸US_6|1.4MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_9|988KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_10|1.9MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_11|1.1MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_12|1.0MB/s 【🟠⚫ 机房|原生】
-  - 🇯🇵JP_13|1.2MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_14|1004KB/s 【❌ 失败】
-  - 🇯🇵JP_15|922KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_16|2.0MB/s 【⚪ 住宅|原生】
-  - 🇬🇧GB_1|1.4MB/s 【🟡 机房|广播】
-  - 🇩🇪DE_13|799KB/s 【🟡 机房|广播】
-  - 🇹🇼TW_1|962KB/s 【🟠 机房|广播】
-  - 🇯🇵JP_17|1.1MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_9|1018KB/s 【🟡⚫ 机房|广播】
-  - 🇯🇵JP_18|745KB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_19|1.6MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_20|818KB/s 【⚪ 住宅|原生】
-  - 🇩🇪DE_14|2.5MB/s 【🟢 机房|原生】
-  - 🇯🇵JP_21|1.0MB/s 【⚪ 住宅|原生】
-  - 🇭🇰HK_10|4.6MB/s 【🟡⚫ 机房|广播】
-  - 🇩🇪DE_15|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_22|971KB/s 【⚪ 住宅|原生】
-  - 🇺🇸US_7|987KB/s 【🟡 机房|广播】
-  - 🇩🇪DE_16|2.5MB/s 【🟡 机房|广播】
-  - 🇯🇵JP_23|1.4MB/s 【⚪ 住宅|原生】
-  - 🇯🇵JP_24|842KB/s 【⚪ 住宅|原生】
-  - 🇹🇼TW_2|3.2MB/s 【🟠⚫ 机房|广播】
-  - 🇺🇸US_8|787KB/s 【🔴 住宅|广播】
-  - 🇺🇸US_9|799KB/s 【⚫🟠 机房|广播】
-  - 🇫🇮FI_1|2.0MB/s 【🟡🟢 机房|广播】
-  - 🇹🇼TW_3|1.8MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_4|1.5MB/s 【🟠⚫ 机房|广播】
-  - 🇹🇼TW_5|1.4MB/s 【🟠⚫ 机房|广播】
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 🇫🇮FI²_1|0%|GPT|X
+      - 🇮🇳IN²_1|GPT|GM|X|sinspired/subs-check
+      - 🇩🇪DE²_1|X
+      - 🇷🇺RU²_1|X|sinspired/subs-check
+      - 🇺🇸US²_1|YT|X
+      - 🇸🇬SG²_3|0%|GPT⁺|GM|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_1|5%|X|sinspired/subs-check
+      - 🏴‍☠_1🇺🇸 美国 | USA 6|X
+      - 🇨🇦CA²_1|GPT|X
+      - 🇱🇹LT²_1|42%|YT-RU|sinspired/subs-check
+      - 🇵🇱PL²_2|sinspired/subs-check
+      - 🇩🇪DE²_2|X|sinspired/subs-check
+      - 🏴‍☠_4US_c5c7c_0012|X
+      - 🏴‍☠_6_未知_35
+      - 🇩🇪DE²_3|GPT|X
+      - 🇵🇱PL²_5|GPT|X
+      - 🇺🇸US²_3|GPT|X
+      - 🇺🇸US²_4|sinspired/subs-check
+      - 🇸🇬SG¹⁺_1|GPT|X
+      - 🇺🇸US²_6|31%|sinspired/subs-check
+      - 🏴‍☠_8🇺🇸-159|sinspired/subs-check
+      - 🏴‍☠_9SG VLESS-128 | free-nodes
+      - 🏴‍☠_10[OpenRay] 🇱🇹 LT-14|X|sinspired/subs-check
+      - 🇭🇰HK¹⁺_2|sinspired/subs-check
+      - 🇭🇰HK²_6|1%|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_10|GPT|X|sinspired/subs-check
+      - 🇺🇸US¹-JP⁰_1|GPT⁺|X|sinspired/subs-check
+      - 🇺🇸US²_11|X
+      - 🇳🇱NL²_6|X
+      - 🇭🇰HK²_7|YT|X
+      - 🇭🇰HK²_8|YT|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_1|5%|Succeed
+      - 🇭🇰HK¹-JP⁰_1|X|sinspired/subs-check
+      - 🇭🇰HK²_9
+      - 🇭🇰HK²_10|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_2|YT|X|sinspired/subs-check
+      - 🇭🇰HK¹-SG⁰_1|X|sinspired/subs-check
+      - 🇺🇸US²_17|GPT|X|sinspired/subs-check
+      - 🇭🇰HK²_12|1%|X|sinspired/subs-check
+      - 🇮🇳IN²_2|YT-RU|X|sinspired/subs-check
+      - 🇯🇵JP²_2|1%|GPT⁺|X
+      - 🇯🇵JP²_3|X
+      - 🇷🇺RU²_2
+      - 🇮🇹IT²_2|GPT⁺|X
+      - 🇭🇰HK²_13|X|sinspired/subs-check
+      - 🇺🇸US¹-SG⁰_2
+      - 🇺🇸US⁻¹_1|GM
+      - 🇭🇰HK²_15|YT|X
+      - 🇺🇸US²_21|GPT|X
+      - 🇭🇰HK²_16|1%|X
+      - 🇺🇸US²_22|X|sinspired/subs-check
+      - 🇸🇬SG²_13|GM|X|Succeed
+      - 🇭🇰HK¹-SG⁰_2|YT|X|sinspired/subs-check
+      - 🇫🇷FR²_1
+      - 🇺🇸US¹⁺_1|GPT⁺|X|sinspired/subs-check
+      - 🇮🇹IT²_3|sinspired/subs-check
+      - 🇭🇰HK²_17|X
+      - 🇨🇦CA²_3|X
+      - 🇭🇰HK²_18|0%|sinspired/subs-check
+      - 🇯🇵JP²_5|YT-RU
+      - 🇺🇸US²_23|X|sinspired/subs-check
+      - 🇭🇰HK²_19|GPT|X|sinspired/subs-check
+      - 🇬🇧GB²_5
+      - 🇭🇰HK¹-CA⁰_1|X
+      - 🇭🇰HK¹⁺_3
+      - 🇭🇰HK¹-CA⁰_2|X|sinspired/subs-check
+      - 🇮🇳IN²_3|X|sinspired/subs-check
+      - 🇭🇰HK²_20|Succeed
+      - 🇺🇸US²_24|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_1|X
+      - 🇺🇸US²_26|YT-CN|sinspired/subs-check
+      - 🇸🇪SE²_2|7%|sinspired/subs-check
+      - 🇭🇰HK²_21|1%|YT|X|Succeed
+      - 🇫🇷FR²_3|X
+      - 🇵🇹PT²_1|X
+      - 🇩🇪DE²_8|X|sinspired/subs-check
+      - 🇰🇷KR²_5|GPT|X
+      - 🇹🇷TR²_1
+      - 🇫🇮FI²_2|X|sinspired/subs-check
+      - 🇺🇸US²_27|X|sinspired/subs-check
+      - 🏴‍☠_16🔥Join+Telegram:@Farah_VPN🟣-2970
+      - 🏴‍☠_17[OpenRay] 🇺🇸 US-11994|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_28|sinspired/subs-check
+      - 🇩🇪DE²_9|X|sinspired/subs-check
+      - 🇸🇬SG²_14|GPT|X|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_3|X|sinspired/subs-check
+      - 🇭🇰HK⁻¹_1
+      - 🇷🇺RU²_3|25%|GPT|X|sinspired/subs-check
+      - 🇳🇱NL¹-SG⁰_1|sinspired/subs-check
+      - 🇩🇪DE²_10|X
+      - 🇭🇰HK¹-CA⁰_3|X
+      - 🏴‍☠_19未知_0203234671|X|sinspired/subs-check
+      - 🇸🇪SE²_3|sinspired/subs-check
+      - 🇺🇸US²_29|sinspired/subs-check
+      - 🇭🇰HK²_22|sinspired/subs-check
+      - 🇭🇰HK¹-CA⁰_4|5%|X
+      - 🇰🇿KZ²_1|sinspired/subs-check
+      - 🇭🇰HK¹-JP⁰_4|GPT|X|sinspired/subs-check
+      - 🇺🇸US²_30|2%|GPT|X
+      - 🇸🇬SG²_15|GPT|X|Succeed
+      - 🇺🇸US¹-JP⁰_2|X|sinspired/subs-check
+      - 🇸🇬SG²_16
+      - 🇸🇬SG¹⁺_2|GPT⁺|X|sinspired/subs-check
+      - 🇭🇰HK²_23|1%|X
+      - 🇫🇷FR²_4
+      - 🇦🇲AM²_1|sinspired/subs-check
+      - 🇺🇸US²_32|X|sinspired/subs-check
+      - 🇺🇸US²_33|42%|X
+      - 🇱🇻LV²_2|42%|YT-RU
+      - 🇫🇷FR¹-US⁰_1|sinspired/subs-check
+      - 🇭🇰HK¹-US⁰_2|YT-SG
+      - 🇸🇬SG²_17|0%|GPT|X
+      - 🇩🇪DE²_11
 rule-providers:
   LocalAreaNetwork:
     type: http
@@ -1692,17 +2312,17 @@ rule-providers:
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
     path: ./rules/ChinaCompanyIp.yaml
 rules:
-- RULE-SET,LocalAreaNetwork,🎯 全球直连
-- RULE-SET,BanAD,🛑 全球拦截
-- RULE-SET,BanProgramAD,🍃 应用净化
-- RULE-SET,GoogleCN,🎯 全球直连
-- RULE-SET,SteamCN,🎯 全球直连
-- RULE-SET,Microsoft,Ⓜ️ 微软服务
-- RULE-SET,Apple,🍎 苹果服务
-- RULE-SET,ProxyMedia,🌍 国外媒体
-- RULE-SET,Telegram,📲 电报信息
-- RULE-SET,ProxyLite,🚀 节点选择
-- RULE-SET,ChinaDomain,🎯 全球直连
-- RULE-SET,ChinaCompanyIp,🎯 全球直连
-- GEOIP,CN,🎯 全球直连
-- MATCH,🐟 漏网之鱼
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
