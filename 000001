@@ -354,25 +354,6 @@ proxies:
     skip-cert-verify: true
     type: socks5
     username: ''
-  - client-fingerprint: chrome
-    encryption: none
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F3\U0001F1F1NL²_1|0%|GPT|NF|X|sinspired/subs-check"
-    network: tcp
-    port: 4443
-    reality-opts:
-      public-key: 85kRzmiv4ofggv0f50hMTgDWSWKsg--UYZjkHA8ohgs
-      short-id: 09
-    server: 89.208.222.100
-    tls: true
-    type: vless
-    udp: true
-    uuid: f171bec7-9793-4a58-8402-d566b3392b93
-    xudp: true
-    servername: ads.x5.ru
   - name: "\U0001F3F4‍☠_2168.119.232.8:1080|X|sinspired/subs-check"
     password: ''
     port: 1080
