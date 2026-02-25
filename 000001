@@ -250,25 +250,6 @@ proxies:
       headers: {}
       path:
         - /
-    name: "\U0001F1FA\U0001F1F8US²_1|GPT⁺|GM|X|sinspired/subs-check|[原生|机房]"
-    network: tcp
-    port: 22230
-    reality-opts:
-      public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-      short-id: ''
-    server: us.ultima.foundation
-    tls: true
-    type: vless
-    udp: true
-    uuid: ed9a0afe-1f54-40af-8821-0995cef0225a
-    xudp: true
-    servername: apple.com
-  - client-fingerprint: chrome
-    encryption: none
-    http-opts:
-      headers: {}
-      path:
-        - /
     name: "\U0001F1F8\U0001F1ECSG²_1|0%|GPT|NF|X|sinspired/subs-check"
     network: tcp
     port: 8443
