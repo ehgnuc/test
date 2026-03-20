@@ -1,110 +1,46 @@
 proxies:
-  - cipher: 2022-blake3-aes-256-gcm
-    name: "\U0001F1EB\U0001F1F7FR²_1|X"
-    password: >-
-      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-    port: 13141
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+  - cipher: aes-256-cfb
+    delay: 1019
+    name: "\U0001F1FB\U0001F1F3VN²_1|GPT⁺|YT-US|X|History"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.114
     type: ss
     udp: true
-  - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_1|X"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.154.143
-    type: ss
-  - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_2|YT-US|X"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.154.14
-    type: ss
-  - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_3|GPT|YT-US|X"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.154.45
-    type: ss
-  - name: "\U0001F1F9\U0001F1FCTW²_1|D+|[原生|住宅]"
-    port: 8654
-    server: 183.240.252.165
-    tls: false
-    type: vless
-    uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d145
-    network: tcp
-  - client-fingerprint: chrome
-    delay: 2321
-    name: "\U0001F1F3\U0001F1F1NL⁻¹_1|History"
-    network: ws
-    password: trojan
-    port: 82
-    server: 136.244.105.89
+  - name: "\U0001F1FF\U0001F1E6ZA²_1|X|History"
+    password: ''
+    port: 10679
+    server: 206.123.156.178
     skip-cert-verify: true
-    sni: jflsjlaf.pages.dev
-    type: trojan
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: jflsjlaf.pages.dev
-      max-early-data: 2560
-      path: /
+    type: socks5
+    username: ''
+  - name: "\U0001F1EC\U0001F1E7GB²_1|8%|GPT|X|History"
+    password: ''
+    port: 5998
+    server: 206.123.156.186
+    skip-cert-verify: true
+    type: socks5
+    username: ''
   - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_4|X|[原生|机房]"
+    name: "\U0001F1FB\U0001F1F3VN²_2|X"
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.154.40
+    server: 103.186.155.67
     type: ss
-  - cipher: aes-256-cfb
-    name: "\U0001F1EA\U0001F1F8ES²_1"
-    password: VcFuyXvND2yQWSFY
-    port: 9054
-    server: 5.188.181.201
-    type: ss
-    udp: true
   - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1EC\U0001F1E7GB²_1|GPT|X|sinspired/subs-check"
-    network: tcp
+    name: "\U0001F1E6\U0001F1FAAU²_1|sinspired/subs-check|[广播|机房]"
+    password: IL37892054
     port: 443
-    reality-opts:
-      public-key: iCY6H8CpnIfqmIkEABduJEAeJrnYS089R1-jKEyVp3w
-      short-id: 5589c1
-    server: 45.150.65.43
-    tls: true
-    type: vless
+    server: steady-lemming.rooster465.autos
+    skip-cert-verify: false
+    sni: steady-lemming.rooster465.autos
+    type: trojan
     udp: true
-    uuid: fd37be2f-f8d1-47de-97e8-13c28107d31e
-    xudp: true
-    servername: us1.frostbot.ru
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F3\U0001F1F1NL²_1|GPT|GM|X|sinspired/subs-check"
     network: tcp
-    port: 8446
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-      short-id: ''
-    server: 176.98.178.162
-    tls: true
-    type: vless
-    udp: true
-    uuid: f3e5644e-5937-4909-af88-cc7da1792cda
-    xudp: true
-    servername: barclays.co.uk
-  - name: "\U0001F1F3\U0001F1F1NL¹-US⁰_1|X"
+  - name: "\U0001F1F3\U0001F1F1NL¹-US⁰_1|7%|GPT|D+|X|Succeed|[广播|机房]"
     network: ws
     port: 443
-    server: 162.159.24.111
+    server: 162.159.7.2
     tls: true
     type: vless
     uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
@@ -115,29 +51,160 @@ proxies:
       early-data-header-name: Sec-WebSocket-Protocol
       max-early-data: 2560
     servername: r.icy.de5.net
+  - alterId: 2
+    cipher: auto
+    country: "\U0001F1ED\U0001F1F0HK"
+    h2-opts: {}
+    http-opts: {}
+    name: "\U0001F1ED\U0001F1F0HK²_1|YT|X|[原生|住宅]"
+    network: ws
+    port: 80
+    server: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net
+    skip-cert-verify: true
+    type: vmess
+    uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
+    ws-opts:
+      headers:
+        HOST: broadcastlv.chat.bilibili.com
+        Host: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net
+      path: /
+    servername: broadcastlv.chat.bilibili.com
+  - client-fingerprint: chrome
+    delay: 1546
+    name: "\U0001F1F3\U0001F1F1NL⁻¹_1|History|[广播|机房]"
+    network: ws
+    password: trojan
+    port: 8444
+    server: 152.53.200.29
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: chrome
+    delay: 1832
+    name: "\U0001F1EE\U0001F1EAIE⁻¹_1|History"
+    network: ws
+    password: trojan
+    port: 8444
+    server: 194.4.51.171
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - name: "\U0001F1F2\U0001F1FDMX²_1|NF|History"
+    password: ''
+    port: 443
+    server: 148.233.136.213
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ''
+  - cipher: 2022-blake3-aes-256-gcm
+    name: "\U0001F1F9\U0001F1FCTW²_1|GPT|X|History|[广播|住宅]"
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    port: 12407
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    tfo: false
+    type: ss
+    udp: true
+  - name: "\U0001F1E9\U0001F1EADE⁻¹_1|7%"
+    network: ws
+    port: 443
+    server: 192.0.63.227
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.ndjp.net
+      path: /danfeng
+    servername: snippet.fgfw.ndjp.net
   - client-fingerprint: chrome
     encryption: none
-    name: "\U0001F1FA\U0001F1F8US¹-\U0001F3F4‍☠️⁰_1"
-    network: ws
-    port: 2083
-    server: 104.16.108.114
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F3\U0001F1F1NL²_1|X|sinspired/subs-check"
+    network: tcp
+    port: 8446
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: ''
+    server: 85.239.34.120
     tls: true
     type: vless
     udp: true
-    uuid: f3f47d83-2966-4743-aaa6-aad34189f7e1
-    ws-opts:
-      headers:
-        Host: 52yunwang.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.77 Safari/537.36
-      path: /
+    uuid: f3e5644e-5937-4909-af88-cc7da1792cda
     xudp: true
-    servername: 52yunwang.dpdns.org
+    servername: barclays.co.uk
+  - cipher: 2022-blake3-aes-256-gcm
+    name: "\U0001F1ED\U0001F1F0HK²_2|X"
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    port: 12361
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F8\U0001F1ECSG²_1|GPT|X|sinspired/subs-check"
+    network: tcp
+    port: 8083
+    reality-opts:
+      public-key: SziXMkSTuvedEFS4DE-WY0a4Hb87Y22VW0TgE9IPDjA
+      short-id: 425ba80cd1a821a8
+    server: 178.17.60.128
+    tls: true
+    type: vless
+    udp: true
+    uuid: 70ea6634-c619-4cc5-b0ba-547544887eaf
+    xudp: true
+    servername: www.apple.com
+  - client-fingerprint: chrome
+    delay: 1844
+    name: "\U0001F1F1\U0001F1FBLV⁻¹_1|History"
+    network: ws
+    password: trojan
+    port: 442
+    server: 216.173.69.146
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - name: "\U0001F1ED\U0001F1F0HK²_3|History"
+    password: <password>
+    port: 8443
+    server: bd00c917-ta1og0-tfpsin-1q3dm.hkt.cdnhuawei.com
+    sni: bd00c917-ta1og0-tfpsin-1q3dm.hkt.cdnhuawei.com
+    tls: true
+    type: http
+    username: c1785de0-212f-11ef-92aa-f23c9164ca5d
   - alpn:
       - http/1.1
     client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE⁻¹_1|History"
+    name: "\U0001F1E9\U0001F1EADE¹-SG⁰_1|TK|X|History"
     network: ws
     port: 443
     server: 195.20.208.72
@@ -154,33 +221,222 @@ proxies:
       path: /danfeng
     xudp: true
     servername: snippet.fgfw.ndjp.net
-  - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_5|NF|X"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.154.67
-    type: ss
-  - name: "\U0001F1E9\U0001F1EADE²_1|History"
+  - alpn:
+      - h2
+    name: "\U0001F1F1\U0001F1E6LA²_1|0%|X|History|[原生|商宽]"
+    network: ws
+    port: 443
+    server: 195.28.169.253
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    uuid: e911c552-3a98-41e0-b5fb-0dd3879887b7
+    ws-opts:
+      headers:
+        Host: vod.ensf.top
+      path: /api/v1/irc
+    servername: vod.ensf.top
+  - name: "\U0001F1EF\U0001F1F5JP²_1|NF|History|[原生|机房]"
     password: ''
-    port: 1080
-    server: 89.167.118.3
+    port: 443
+    server: 203.189.96.232
+    skip-cert-verify: true
+    tls: true
+    type: http
+    username: ''
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    name: "\U0001F1E9\U0001F1EADE¹-SG⁰_2|GPT|X|sinspired/subs-check"
+    network: ws
+    port: 443
+    server: 70.34.218.89
+    tls: true
+    type: vless
+    udp: true
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.ndjp.net
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/41.0.2272.101 Safari/537.36
+      path: /danfeng
+    xudp: true
+    servername: snippet.fgfw.ndjp.net
+  - name: "\U0001F1F0\U0001F1F7KR²_1|Succeed|[原生|住宅]"
+    password: ''
+    port: 3128
+    server: 1.231.81.166
+    skip-cert-verify: true
+    tls: false
+    type: http
+    username: ''
+  - name: "\U0001F1F8\U0001F1ECSG²_2|X|sinspired/subs-check"
+    password: ''
+    port: 4458
+    server: 206.123.156.178
     skip-cert-verify: true
     type: socks5
     username: ''
-  - name: "\U0001F1FA\U0001F1F8US²_1|X|sinspired/subs-check"
+  - name: "\U0001F1F8\U0001F1ECSG²_3|GPT|X|sinspired/subs-check"
     password: ''
-    port: 1080
-    server: 137.175.64.51
+    port: 5054
+    server: 206.123.156.176
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1E9\U0001F1EADE²_1|sinspired/subs-check"
+    password: ''
+    port: 7795
+    server: 206.123.156.188
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - cipher: 2022-blake3-aes-256-gcm
+    name: "\U0001F1EF\U0001F1F5JP²_2|5%|GPT|YT|X|History"
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    port: 14625
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    tfo: false
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    delay: 1112
+    name: "\U0001F1F0\U0001F1F7KR⁻¹_1|NF"
+    network: ws
+    password: trojan
+    port: 10003
+    server: 221.146.116.77
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - name: "\U0001F1FA\U0001F1F8US²_1|0%|sinspired/subs-check|[原生|机房]"
+    password: ''
+    port: 6000
+    server: 206.123.156.208
     skip-cert-verify: true
     type: socks5
     username: ''
   - client-fingerprint: chrome
-    delay: 2904
-    name: "\U0001F1F3\U0001F1F1NL⁻¹_2"
+    fingerprint: ''
+    name: "\U0001F1F1\U0001F1FBLV²_1|GPT|X"
+    network: ws
+    port: 443
+    server: 188.253.22.2
+    tls: false
+    type: vless
+    udp: false
+    uuid: f2a806c6-f36b-4cd9-8bb6-7addb218ad2d
+    ws-opts:
+      path: /
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_3|X|History"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.13
+    type: ss
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    name: "\U0001F1F0\U0001F1F7KR¹-SG⁰_1|X|sinspired/subs-check"
+    network: ws
+    port: 23253
+    server: 222.97.154.26
+    tls: true
+    type: vless
+    udp: true
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.chinav.eu.cc
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/67.0.3396.99 Safari/537.36
+      path: /danfeng
+    xudp: true
+    servername: snippet.chinav.eu.cc
+  - name: "\U0001F1EB\U0001F1EEFI²_1|sinspired/subs-check"
+    password: ''
+    port: 10440
+    server: 206.123.156.178
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - cipher: aes-256-cfb
+    country: "\U0001F3C1 ZZ"
+    delay: 637
+    name: "\U0001F1FB\U0001F1F3VN²_4"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.62
+    type: ss
+  - client-fingerprint: chrome
+    delay: 1472
+    name: "\U0001F1ED\U0001F1F0HK⁻¹_1"
     network: ws
     password: trojan
-    port: 7777
-    server: 46.17.101.136
+    port: 23456
+    server: 43.198.0.32
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_5"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.231
+    type: ss
+  - client-fingerprint: chrome
+    delay: 2911
+    name: "\U0001F1E6\U0001F1F9AT⁻¹_1|D+|History|[广播|机房]"
+    network: ws
+    password: trojan
+    port: 8888
+    server: 152.53.45.251
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    auth_str: dongtaiwang.com
+    down: 1000
+    name: "\U0001F1E9\U0001F1EADE²_2|0%|GPT⁺|YT-CN|TK|NF|D+|X|Succeed|[广播|商宽]"
+    port: 20088
+    protocol: udp
+    server: 5.83.129.153
+    skip-cert-verify: true
+    sni: apple.com
+    type: hysteria
+    udp: true
+    up: 500
+  - client-fingerprint: chrome
+    delay: 1755
+    name: "\U0001F1F8\U0001F1ECSG²_4|History"
+    network: ws
+    password: trojan
+    port: 2525
+    server: 46.62.132.84
     skip-cert-verify: true
     sni: jflsjlaf.pages.dev
     type: trojan
@@ -191,140 +447,243 @@ proxies:
       max-early-data: 2560
       path: /
   - client-fingerprint: chrome
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F2\U0001F1E9MD²_1|Succeed"
-    network: tcp
-    port: 8080
-    reality-opts:
-      public-key: w28tNIWZCfW4X9aQDLwXECK3pU59zihJ0GIMA13u5X8
-      short-id: ''
-    server: 103.35.189.204
-    tls: true
-    type: vless
-    udp: true
-    uuid: a001c9c4-ece2-4dc1-9658-cbad90fcd2e0
-    xudp: true
-    servername: max.ru
+    delay: 2321
+    name: "\U0001F1F3\U0001F1F1NL⁻¹_2|TK|D+|History"
+    network: ws
+    password: trojan
+    port: 82
+    server: 136.244.105.89
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
   - client-fingerprint: chrome
-    encryption: none
     flow: xtls-rprx-vision
     http-opts:
       headers: {}
       path:
         - /
-    name: "\U0001F1EE\U0001F1F6IQ²_1|sinspired/subs-check"
+    name: "\U0001F1EF\U0001F1F5JP²_3|sinspired/subs-check"
     network: tcp
-    port: 8083
+    port: 443
     reality-opts:
-      public-key: SziXMkSTuvedEFS4DE-WY0a4Hb87Y22VW0TgE9IPDjA
-      short-id: 425ba80cd1a821a8
-    server: 178.17.60.128
+      public-key: ZnZw3MotXG-T9mr-mJQrZRdYgENbXNuu3DT7JQnm6BM
+      short-id: c181fa04b5ae281a
+    server: jp.anonch.org
     tls: true
     type: vless
     udp: true
-    uuid: 2254f987-055f-4f7f-b53f-fd77a9443744
+    uuid: 54553805-f4b8-4f24-b6ac-448ec84bba47
     xudp: true
-    servername: www.apple.com
-  - name: "\U0001F1E9\U0001F1EADE²_2|3%|sinspired/subs-check"
+    servername: jp.anonch.org
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F3F4‍☠_1\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-1245"
+    network: ws
+    port: 443
+    server: 104.17.106.12
+    tls: true
+    type: vless
+    udp: true
+    uuid: 6fb65356-788e-4118-8280-148ec6eca18a
+    ws-opts:
+      headers:
+        Host: xn--cz8h.pages.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+          Chrome/68.0.3440.106 Safari/537.36
+      path: /pyip=proxyip.cmliussss.net
+    xudp: true
+    servername: xn--cz8h.pages.dev
+  - name: "\U0001F3F4‍☠_2\U0001F1EB\U0001F1F7FR²_1|sinspired/subs-check|X|History"
     password: ''
-    port: 11178
-    server: 165.225.72.38
+    port: 3128
+    server: 185.41.152.110
     skip-cert-verify: true
     tls: false
     type: http
     username: ''
-  - client-fingerprint: chrome
-    name: "\U0001F3F4‍☠_1\U0001F1FA\U0001F1F8US²_3-CN|[广播|商宽]|History"
-    port: 18959
-    reality-opts:
-      public-key: '-hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA'
-      short-id: d557c6895d014075
-    server: 157.254.223.44
-    tls: true
-    type: vless
-    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-    network: tcp
-    servername: itunes.apple.com
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US¹-NL⁰_1|GPT|YT|D+|X|History"
-    network: ws
-    password: '8r<[9''l6hAO#8ZQi'
-    port: 8443
-    server: 172.66.44.230
-    skip-cert-verify: false
-    sni: Koma-YT.PAGeS.Dev
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile
-          Safari/537.36
-      path: /tro8sFW1S91B6sZrM1
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
   - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_6|GPT|YT-RU|X"
+    name: "\U0001F1FB\U0001F1F3VN²_6|GM|X|[原生|机房]"
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
-    server: 103.186.155.183
+    server: 103.186.155.131
     type: ss
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1E8\U0001F1E6CA²_1|0%|[广播|机房]"
-    port: 5755
-    server: c32s5.portablesubmarines.com
-    skip-cert-verify: false
+  - name: "\U0001F1EF\U0001F1F5JP²_4|X|History"
+    password: ''
+    port: 7799
+    server: 219.117.204.211
+    skip-cert-verify: true
     tls: false
-    type: vmess
-    uuid: 70181e68-9ec6-4007-837e-86b28746c2dc
-    network: tcp
-  - client-fingerprint: chrome
+    type: http
+    username: ''
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: qq
     encryption: none
     flow: xtls-rprx-vision
     http-opts:
       headers: {}
       path:
         - /
-    name: "\U0001F1F3\U0001F1F1NL²_2|sinspired/subs-check"
+    name: "\U0001F1E9\U0001F1EADE²_3|sinspired/subs-check|[广播|商宽]"
     network: tcp
     port: 443
-    reality-opts:
-      public-key: iCY6H8CpnIfqmIkEABduJEAeJrnYS089R1-jKEyVp3w
-      short-id: bff3
-    server: 194.87.44.157
+    server: 109.120.191.165
     tls: true
     type: vless
     udp: true
-    uuid: fd37be2f-f8d1-47de-97e8-13c28107d31e
+    uuid: 6b764f25-d6cb-0bb8-bd61-3359187fd478
     xudp: true
-    servername: nld10.frostbot.ru
-  - name: "\U0001F1E9\U0001F1EADE²_3|History"
+    servername: anti-vpn.ru
+  - cipher: aes-256-cfb
+    country: "\U0001F3C1 ZZ"
+    delay: 1053
+    name: "\U0001F3F4‍☠_3越南 - Hải Dương - 23|YT-VN|X"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.227
+    type: ss
+  - client-fingerprint: random
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F2\U0001F1FEMY²_1|X|sinspired/subs-check|[广播|机房]"
+    network: tcp
+    port: 19001
+    reality-opts:
+      public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
+      short-id: ''
+    server: hke01.jumperservice.com
+    tls: true
+    type: vless
+    udp: true
+    uuid: 5ab22628-9dc7-48c4-c56e-f129da583baa
+    xudp: true
+    servername: www.speedtest.org
+  - name: "\U0001F3F4‍☠_4206.123.156.185:4757|GPT|X|sinspired/subs-check"
+    password: ''
+    port: 4757
+    server: 206.123.156.185
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - alpn:
+      - h3
+    auth-str: dongtaiwang.com
+    down: '1000'
+    name: "\U0001F1E9\U0001F1EADE²_4|0%|GPT⁺|YT-CN|TK|NF|D+|X|History|[广播|商宽]"
+    port: 54177
+    protocol: udp
+    server: 5.83.129.90
+    skip-cert-verify: true
+    sni: apple.com
+    type: hysteria
+    up: '500'
+  - name: "\U0001F3F4‍☠_5206.123.156.178:4279|X|sinspired/subs-check"
+    password: ''
+    port: 4279
+    server: 206.123.156.178
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - client-fingerprint: random
+    name: "\U0001F1E9\U0001F1EADE¹-SG⁰_3|7%|X"
+    network: ws
+    port: 443
+    server: 114.33.57.170
+    tls: true
+    type: vless
+    udp: true
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.ndjp.net
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      path: /danfeng
+    xudp: true
+    servername: snippet.fgfw.ndjp.net
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F5\U0001F1F1PL²_1|X|History"
+    network: tcp
+    port: 701
+    reality-opts:
+      public-key: EJKcPSl0dv7mtU26gg6tUmKPw_aDvO2AHraRgNn6B14
+      short-id: 425ba80cd1a821a8
+    server: 195.3.221.187
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0f7ee331-3a78-4341-acbb-39b9b7bd7f47
+    xudp: true
+    servername: www.origin.com
+  - client-fingerprint: chrome
+    delay: 1344
+    name: "\U0001F1F3\U0001F1F1NL⁻¹_3"
+    network: ws
+    password: trojan
+    port: 8444
+    server: 152.53.107.76
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_7|GPT|YT-CN|X"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.180
+    type: ss
+  - name: "\U0001F1F8\U0001F1ECSG²_5|History"
     password: ''
     port: 443
-    server: 54.37.72.89
+    server: 128.199.207.200
     skip-cert-verify: true
     tls: true
     type: http
     username: ''
   - alterId: 0
     cipher: auto
-    name: "\U0001F1EF\U0001F1F5JP²_1"
+    delay: 1623
+    name: "\U0001F1ED\U0001F1F0HK²_4|GPT|X|[广播|机房]"
     network: ws
-    port: 16617
+    port: 16632
     server: t.cnmjcn.cyou
-    skip-cert-verify: false
+    skip-cert-verify: true
     tls: false
     type: vmess
-    uuid: 8fe47794-bb25-446c-a1f7-7408a1d0b9c3
+    udp: true
+    uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
     ws-opts:
       headers:
-        Host: 7b30e34ac69c2cef7dbe9bd6e2484f6f.mobgslb.tbcache.com
+        Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
       path: /
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_8|NF|X"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.240
+    type: ss
   - alpn:
       - h3
     auth-str: dongtaiwang.com
@@ -339,39 +698,727 @@ proxies:
     type: hysteria
     udp: true
     up: 11 Mbps
-  - name: "\U0001F3F4‍☠_2195.19.50.126:1080|sinspired/subs-check"
+  - name: "\U0001F1FA\U0001F1F8US²_3|sinspired/subs-check|[原生|机房]"
     password: ''
-    port: 1080
-    server: 195.19.50.126
+    port: 7422
+    server: 206.123.156.189
     skip-cert-verify: true
     type: socks5
     username: ''
+  - name: "\U0001F1F0\U0001F1F7KR²_2|History"
+    password: ''
+    port: 6388
+    server: 123.143.162.221
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1F3\U0001F1F1NL⁻¹_4|History"
+    network: ws
+    port: 4433
+    server: 138.226.240.199
+    tls: true
+    type: vless
+    uuid: 00000000-0000-4000-8000-000000000000
+    ws-opts:
+      headers:
+        Host: sub.mot.ip-ddns.com
+      path: /
+    servername: sub.mot.ip-ddns.com
+  - http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1FA\U0001F1F8US²_4|YT-RU|NF|History"
+    network: tcp
+    port: 443
+    server: 37.220.86.14
+    type: vless
+    udp: true
+    uuid: 932130c7-197b-4b37-af26-d550c47ba8f4
+    xudp: true
+  - cipher: 2022-blake3-aes-256-gcm
+    name: "\U0001F1ED\U0001F1F0HK²_5|2%|YT|History"
+    password: >-
+      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+    port: 12163
+    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
+    tfo: false
+    type: ss
+    udp: true
+  - client-fingerprint: qq
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F3F4‍☠_6[OpenRay] \U0001F1F7\U0001F1FA RU-13580|sinspired/subs-check"
+    network: tcp
+    port: 8083
+    reality-opts:
+      public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
+      short-id: 7dbf7d3233971d5c
+    server: 217.16.31.186
+    tls: true
+    type: vless
+    udp: true
+    uuid: a001c9c4-ece2-4dc1-9658-cbad90fcd2e0
+    xudp: true
+    servername: ads.x5.ru
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F7\U0001F1FARU²_1|YT|sinspired/subs-check"
+    network: tcp
+    port: 2016
+    reality-opts:
+      public-key: NTuI1KllPR2DtdPM5mqJBzOCVGuHyQNY8gCkx2f2CBk
+      short-id: 35a84908e9cfa95c
+    server: 51.250.21.100
+    tls: true
+    type: vless
+    udp: true
+    uuid: 654ab79c-8c57-81b8-e079-9180f7262e30
+    xudp: true
+    servername: io.ozone.ru
+  - cipher: aes-256-gcm
+    country: "\U0001F1F7\U0001F1FARU"
+    delay: 2230
+    name: "\U0001F1F8\U0001F1ECSG²_6"
+    password: c5fcdf7829112cb4
+    port: 50128
+    server: 45.140.169.225
+    type: ss
+  - client-fingerprint: chrome
+    country: "\U0001F1E6\U0001F1FAAU"
+    delay: 1901
+    name: "\U0001F1E6\U0001F1FAAU²_2"
+    network: tcp
+    password: IL37892054
+    port: 443
+    server: engaged-ram.rooster465.autos
+    skip-cert-verify: true
+    sni: engaged-ram.rooster465.autos
+    type: trojan
+    udp: true
+  - alterId: 0
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US²_5|X|History"
+    network: tcp
+    port: 180
+    server: 82.198.246.97
+    tls: false
+    type: vmess
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_9|GPT|NF|X|History|[原生|机房]"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.13
+    type: ss
+    udp: true
+  - name: "\U0001F3F4‍☠_7206.123.156.185:4879|sinspired/subs-check"
+    password: ''
+    port: 4879
+    server: 206.123.156.185
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1F0\U0001F1F7KR²_3|1%|GPT⁺|D+|X|Succeed"
+    password: 9594f8cc-da22-4504-9bcb-b8f219fe28ec
+    port: 56309
+    ports: '56309'
+    server: kr.ccwink.cc
+    skip-cert-verify: true
+    sni: kr.ccwink.cc
+    tfo: false
+    type: hysteria2
+  - client-fingerprint: chrome
+    name: "\U0001F1F0\U0001F1F7KR⁻¹_2|GM|YT|Succeed"
+    network: ws
+    password: trojan
+    port: 10003
+    server: 118.34.36.61
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/66.0.3359.117 Safari/537.36
+      path: /
+  - name: "\U0001F1F7\U0001F1FARU²_2|History"
+    password: ''
+    port: 1080
+    server: 31.130.131.142
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - client-fingerprint: chrome
+    delay: 2692
+    name: "\U0001F1EE\U0001F1F9IT⁻¹_1"
+    network: ws
+    password: trojan
+    port: 9443
+    server: 18.102.110.23
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: qq
+    encryption: none
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E9\U0001F1EADE²_5|sinspired/subs-check|[广播|政府]"
+    network: tcp
+    port: 7433
+    reality-opts:
+      public-key: Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw
+      short-id: 7dbf7d3233971d5c
+    server: 217.16.31.186
+    tls: true
+    type: vless
+    udp: true
+    uuid: a9becba8-7559-46b2-ac49-5b14e2ea2180
+    xudp: true
+    servername: ads.x5.ru
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: "\U0001F3F4‍☠_8[OpenRay] \U0001F1FA\U0001F1F8 US-11390|sinspired/subs-check"
+    network: ws
+    password: humanity
+    port: 443
+    server: free1.aattaash.com
+    skip-cert-verify: false
+    sni: www.creationlong.org
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/60.0.3112.90 Safari/537.36
+      path: /assignment
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F3\U0001F1F1NL²_2|X|History|[原生|机房]"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+      short-id: adedb70a7409
+    server: dns.dressforida.monster
+    tls: true
+    type: vless
+    udp: true
+    uuid: 37c79fbe-861a-4725-a8e4-196e2d886e33
+    xudp: true
+    servername: www.mozilla.org
+  - name: "\U0001F3F4‍☠_9\U0001F1E6\U0001F1F9_奥地利"
+    network: ws
+    port: 8443
+    server: 152.53.146.92
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.ndjp.net
+      path: /danfeng
+    servername: snippet.fgfw.ndjp.net
+  - client-fingerprint: chrome
+    name: "\U0001F1FA\U0001F1F8US²_6|X|History"
+    port: 18959
+    reality-opts:
+      public-key: '-hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA'
+      short-id: d557c6895d014075
+    server: 157.254.223.44
+    tls: true
+    type: vless
+    uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
+    network: tcp
+    servername: itunes.apple.com
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_10|GM|History|[原生|机房]"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.17
+    type: ss
+  - alpn:
+      - ''
+    alterId: '0'
+    cipher: auto
+    name: "\U0001F1F9\U0001F1FCTW²_2|0%|X|sinspired/subs-check"
+    network: ws
+    port: 16616
+    server: m.cnmjin.net
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: dbe3102c-5e26-4b5f-82eb-493ae07e758c
+    ws-opts:
+      headers:
+        Host: 437dfed94cb7943bb6f7f93ccf00a561.mobgslb.tbcache.com
+      path: /
+    xudp: true
+  - client-fingerprint: firefox
+    encryption: none
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E6\U0001F1F8Local ISP_1|sinspired/subs-check"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: rjE8nekciQ8vkzooBJVwOIqV5tMS0soqdq1AysukY2Q
+      short-id: 5bfa0c
+    server: jp1.cyphervpn.pro
+    tls: true
+    type: vless
+    udp: true
+    uuid: f7bae22e-20ab-11f1-835c-0242ac110002
+    xudp: true
+    servername: jp1.cyphervpn.pro
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1FA\U0001F1F8US⁻¹_1|NF|History|[原生|机房]"
+    network: ws
+    port: 443
+    server: 172.66.47.15
+    tls: true
+    type: vless
+    udp: true
+    uuid: 51905684-6f28-49a9-bb80-00cf62bbcb08
+    ws-opts:
+      headers:
+        Host: 51905684-6f28-49a9-bb80-00cf62bbcb08.pages.dev
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/59.0.3071.115 Safari/537.36
+      path: >-
+        /eyJqdW5rIjoicGpHbkl4bDhnYTIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    xudp: true
+    servername: 51905684-6F28-49A9-Bb80-00CF62BBCb08.pAGES.DEV
+  - cipher: chacha20-ietf-poly1305
+    name: "\U0001F1F9\U0001F1FCTW²_3|0%|GM|NF|D+"
+    password: dd9e4541-9be2-4c3f-9c49-7dde77c3480b
+    port: 38239
+    server: stream-cdn-asia-06.silver-line.digital
+    type: ss
+  - cipher: aes-256-cfb
+    country: "\U0001F3C1 ZZ"
+    delay: 698
+    name: "\U0001F1FB\U0001F1F3VN²_11"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.53
+    type: ss
+  - name: "\U0001F1FA\U0001F1F8US²_7|0%|X|sinspired/subs-check|[原生|机房]"
+    password: ''
+    port: 7588
+    server: 206.123.156.182
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1F8\U0001F1ECSG²_7|History"
+    password: ''
+    port: 1080
+    server: 159.223.53.194
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1E9\U0001F1EADE²_6|43%|sinspired/subs-check"
+    password: ''
+    port: 8178
+    server: 206.123.156.203
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F3F4‍☠_10187.199.137.59:6881|X|sinspired/subs-check|[原生|住宅]"
+    password: ''
+    port: 6881
+    server: 187.199.137.59
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - cipher: chacha20-ietf
+    name: "\U0001F1ED\U0001F1F0HK²_6|X|History"
+    password: asd123456
+    port: 8388
+    server: 103.149.182.79
+    type: ss
+    udp: true
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    name: "\U0001F1F8\U0001F1ECSG²_8|X|Succeed"
+    network: ws
+    port: 8443
+    server: 65.108.149.250
+    tls: true
+    type: vless
+    udp: true
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.fgfw.ndjp.net
+        User-Agent: >-
+          Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+          Gecko) Chrome/46.0.2490.86 Safari/537.36
+      path: /danfeng
+    xudp: true
+    servername: snippet.fgfw.ndjp.net
+  - alterId: '0'
+    cipher: auto
+    name: "\U0001F1FA\U0001F1F8US²_8|X|sinspired/subs-check"
+    network: raw
+    port: 180
+    server: 82.198.246.97
+    skip-cert-verify: false
+    tls: false
+    type: vmess
+    udp: true
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    xudp: true
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
     http-opts:
       headers: {}
       path:
         - /
-    name: "\U0001F1F0\U0001F1FFKZ²_1|0%|GPT|X"
+    name: "\U0001F1F3\U0001F1F1NL²_3|NF|sinspired/subs-check"
     network: tcp
-    port: 13344
+    port: 443
     reality-opts:
-      public-key: DC71RjKr16drr8gqK8QhEuCVLpkbBfUfPb9Far8Jkzo
-      short-id: e2bd9802e29deb
-    server: 45.136.59.44
+      public-key: 6pfwnxTUQzoiaTHZHPLFfw5jQ5bPkjwOZ7Uv1SxyBFI
+      short-id: 05456f080e1ba9b0
+    server: nl.anonch.org
     tls: true
     type: vless
     udp: true
-    uuid: 3fce3b0d-0b92-4e92-9a78-18051dd648b4
+    uuid: 54553805-f4b8-4f24-b6ac-448ec84bba47
     xudp: true
-    servername: yahoo.com
+    servername: nl.anonch.org
   - client-fingerprint: chrome
-    delay: 1591
-    name: "\U0001F1E9\U0001F1EADE⁻¹_2|TK|NF"
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1E6\U0001F1F9AT²_1|29%|YT-US|TK|sinspired/subs-check"
+    network: tcp
+    port: 8447
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: ''
+    server: 83.217.200.46
+    tls: true
+    type: vless
+    udp: true
+    uuid: f3e5644e-5937-4909-af88-cc7da1792cda
+    xudp: true
+    servername: barclays.co.uk
+  - name: "\U0001F1F3\U0001F1F1NL¹-US⁰_2|7%|X|History"
+    network: ws
+    port: 443
+    server: 108.162.195.58
+    tls: true
+    type: vless
+    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
+    ws-opts:
+      headers:
+        Host: r.icy.de5.net
+      path: /
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    servername: r.icy.de5.net
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_12"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.154.24
+    type: ss
+  - name: "\U0001F1FA\U0001F1F8US²_9|X|sinspired/subs-check|[原生|机房]"
+    password: ''
+    port: 5953
+    server: 206.123.156.185
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - client-fingerprint: chrome
+    fingerprint: ''
+    name: "\U0001F1F7\U0001F1FARU²_3"
+    network: ws
+    port: 443
+    server: 94.242.51.174
+    tls: false
+    type: vless
+    udp: false
+    uuid: 3ddce082-7e03-429c-8af8-9a873d23f0ba
+    ws-opts:
+      path: /
+  - alterId: 0
+    cipher: auto
+    client-fingerprint: chrome
+    name: "\U0001F3F4‍☠_11\U0001F1EE\U0001F1E9ID²_1|sinspired/subs-check|History"
+    network: ws
+    port: 443
+    server: chatgpt.com
+    tls: true
+    type: vmess
+    udp: true
+    uuid: 8072298f-cd28-4a61-8e05-5879c84b9100
+    ws-opts:
+      headers:
+        Host: neva.azlan.biz.id
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile
+          Safari/537.36
+      path: /vmess
+    xudp: true
+    servername: neva.azlan.biz.id
+  - cipher: aes-256-cfb
+    name: "\U0001F1FB\U0001F1F3VN²_13|X|History"
+    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+    port: 38388
+    server: 103.186.155.81
+    type: ss
+    udp: true
+  - client-fingerprint: chrome
+    delay: 2392
+    name: "\U0001F1E9\U0001F1EADE⁻¹_2|TK|History"
     network: ws
     password: trojan
-    port: 8989
-    server: 65.109.203.242
+    port: 888
+    server: 91.107.151.136
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - name: "\U0001F1ED\U0001F1F0HK²_7"
+    password: BxceQaOe
+    port: 443
+    server: 58.152.25.253
+    skip-cert-verify: true
+    sni: t.me/ripaojiedian
+    type: trojan
+    network: tcp
+  - name: "\U0001F1FA\U0001F1F8US²_11|0%|NF|sinspired/subs-check|[原生|机房]"
+    password: ''
+    port: 4745
+    server: 206.123.156.202
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1FA\U0001F1F8US²_10|NF|X|History"
+    password: ''
+    port: 6204
+    server: 206.123.156.236
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F1EB\U0001F1F7FR²_1|0%|X|sinspired/subs-check"
+    password: ''
+    port: 4079
+    server: 206.123.156.178
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - alpn:
+      - http/1.1
+    client-fingerprint: random
+    name: "\U0001F1F0\U0001F1F7KR⁻¹_3"
+    network: ws
+    port: 15018
+    server: 61.79.126.130
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.chinav.eu.cc
+      path: /danfeng
+    servername: snippet.chinav.eu.cc
+  - name: "\U0001F1E9\U0001F1EADE⁻¹_3"
+    network: ws
+    port: 8080
+    server: 202.61.200.220
+    tls: true
+    type: vless
+    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+    ws-opts:
+      headers:
+        Host: snippet.danfeng.kozow.com
+      path: /danfeng
+      early-data-header-name: Sec-WebSocket-Protocol
+      max-early-data: 2560
+    servername: snippet.danfeng.kozow.com
+  - name: "\U0001F1FA\U0001F1F8US²_12|X|sinspired/subs-check"
+    password: ''
+    port: 20202
+    server: 198.211.100.143
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - alterId: 2
+    cipher: auto
+    country: "\U0001F1ED\U0001F1F0HK"
+    h2-opts: {}
+    http-opts: {}
+    name: "\U0001F1ED\U0001F1F0HK²_8"
+    network: ws
+    port: 80
+    server: cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net
+    skip-cert-verify: true
+    type: vmess
+    uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+    ws-opts:
+      headers:
+        HOST: broadcastlv.chat.bilibili.com
+        Host: cd5a4e76-t70f40-t7dv8l-1szgv.hkt.gotochinatown.net
+      path: /
+    servername: broadcastlv.chat.bilibili.com
+  - client-fingerprint: chrome
+    delay: 1925
+    name: "\U0001F1F3\U0001F1F1NL⁻¹_5|NF|D+|History"
+    network: ws
+    password: trojan
+    port: 587
+    server: 5.253.189.205
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: random
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F3\U0001F1F1NL²_4|GPT|X|sinspired/subs-check"
+    network: tcp
+    port: 568
+    reality-opts:
+      public-key: 59QwNDh3sgvFX12hCCoCveYykCzo19hxh6wel3hN3GA
+      short-id: ''
+    server: 85.209.157.36
+    tls: true
+    type: vless
+    udp: true
+    uuid: 7478ff88-1354-4143-96ce-6c8059273ef0
+    xudp: true
+    servername: www.amd.com
+  - client-fingerprint: chrome
+    encryption: none
+    name: "\U0001F1FA\U0001F1F8US²_13|GM|History"
+    network: ws
+    port: 443
+    server: 198.41.199.255
+    tls: true
+    type: vless
+    udp: true
+    uuid: 0596d8de-cf34-402a-b533-163b15e642eb
+    ws-opts:
+      headers:
+        Host: windy.adaspoloandco.com
+        User-Agent: >-
+          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.10
+          (KHTML, like Gecko) Chrome/8.0.552.237 Safari/534.10
+      path: /downloader.php
+    xudp: true
+    servername: windy.adaspoloandco.com
+  - client-fingerprint: chrome
+    delay: 2152
+    name: "\U0001F1EF\U0001F1F5JP⁻¹_1|NF"
+    network: ws
+    password: trojan
+    port: 587
+    server: 217.142.250.195
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: chrome
+    delay: 1921
+    name: "\U0001F1EB\U0001F1F7FR⁻¹_1|D+|[广播|机房]"
+    network: ws
+    password: trojan
+    port: 445
+    server: 109.61.110.80
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - name: "\U0001F1FB\U0001F1F3VN²_14|sinspired/subs-check|[原生|机房]"
+    password: ''
+    port: 4737
+    server: 206.123.156.205
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - name: "\U0001F3F4‍☠_1265.108.203.37:28080-02|X|sinspired/subs-check"
+    password: ''
+    port: 28080
+    server: 65.108.203.37
+    skip-cert-verify: true
+    tls: false
+    type: http
+    username: ''
+  - client-fingerprint: chrome
+    delay: 1806
+    name: "\U0001F1F0\U0001F1F7KR⁻¹_4|[广播|机房]"
+    network: ws
+    password: trojan
+    port: 10035
+    server: 223.222.74.163
     skip-cert-verify: true
     sni: jflsjlaf.pages.dev
     type: trojan
@@ -388,46 +1435,161 @@ proxies:
       headers: {}
       path:
         - /
-    name: "\U0001F1EA\U0001F1EAEE²_1"
+    name: "\U0001F1F8\U0001F1ECSG²_9|History|[广播|机房]"
+    network: tcp
+    port: 8083
+    reality-opts:
+      public-key: SziXMkSTuvedEFS4DE-WY0a4Hb87Y22VW0TgE9IPDjA
+      short-id: 425ba80cd1a821a8
+    server: 178.17.60.128
+    tls: true
+    type: vless
+    udp: true
+    uuid: 2254f987-055f-4f7f-b53f-fd77a9443744
+    xudp: true
+    servername: www.apple.com
+  - name: "\U0001F1FA\U0001F1F8US²_14|History"
+    password: gs4BXwT6SW
+    port: 10988
+    server: 154.26.192.123
+    skip-cert-verify: false
+    tls: false
+    type: http
+    username: fQ67Dpe5dU
+  - client-fingerprint: chrome
+    delay: 938
+    name: "\U0001F1F0\U0001F1F7KR⁻¹_5|NF|D+|[广播|机房]"
+    network: ws
+    password: trojan
+    port: 11434
+    server: 118.35.208.37
+    skip-cert-verify: true
+    sni: jflsjlaf.pages.dev
+    type: trojan
+    ws-opts:
+      early-data-header-name: Sec-WebSocket-Protocol
+      headers:
+        Host: jflsjlaf.pages.dev
+      max-early-data: 2560
+      path: /
+  - client-fingerprint: chrome
+    encryption: none
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F8\U0001F1ECSG²_10|YT-RU|NF|D+|X|sinspired/subs-check|[广播|住宅]"
     network: tcp
     port: 443
     reality-opts:
-      public-key: 3u-RoUuzGFtfVwCbUJ4GxAhNUyR6DcyAzeyaSdNXG0A
-      short-id: 8c
-    server: 193.109.120.119
+      public-key: GYqQl8suX6lgrJZ27CkhMwtxmDGkd45QxKBJGaHUgQM
+      short-id: 7cc366b3
+    server: br-gru-1.blook.network
+    tls: true
+    type: vless
+    udp: true
+    uuid: 022f26a9-ed42-41d3-969b-fc004ef26078
+    xudp: true
+    servername: br-gru-1.blook.network
+  - name: "\U0001F1FA\U0001F1F8US²_15|10%|GPT⁺|YT-JP|TK|NF|D+|X|[广播|住宅]"
+    password: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+    port: 443
+    server: c177cf3b-tc9b40-tlo9uj-1szgv.jp.oshuawei.com
+    sni: c177cf3b-tc9b40-tlo9uj-1szgv.jp.oshuawei.com
+    tls: true
+    type: http
+    username: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+  - client-fingerprint: chrome
+    flow: xtls-rprx-vision
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F7\U0001F1FARU²_4|YT|sinspired/subs-check|[原生|机房]"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+      short-id: e7
+    server: pass.enigmabot.ru
     tls: true
     type: vless
     udp: true
     uuid: fd37be2f-f8d1-47de-97e8-13c28107d31e
     xudp: true
-    servername: est15.frostbot.ru
+    servername: yandex.ru
   - alpn:
       - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE¹-SG⁰_1|X|sinspired/subs-check"
+    client-fingerprint: chrome
+    name: "\U0001F1E9\U0001F1EADE¹-SG⁰_4|7%|YT|TK|NF|D+|[广播|机房]"
     network: ws
-    port: 347
-    server: 143.20.175.30
+    port: 8443
+    server: 31.58.50.225
     tls: true
     type: vless
     udp: true
     uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
     ws-opts:
       headers:
-        Host: snippet.chinat.eu.cc
+        Host: snippet.chinav.eu.cc
         User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      path: /danfeng
+          Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+          like Gecko) Chrome/57.0.2987.133 Safari/537.36
+      path: /danfengfp=chrome
     xudp: true
-    servername: snippet.chinat.eu.cc
+    servername: snippet.chinav.eu.cc
   - client-fingerprint: chrome
-    delay: 1344
-    name: "\U0001F1FA\U0001F1F8US⁻¹_1|History"
+    name: "\U0001F1EF\U0001F1F5JP¹-\U0001F3F4‍☠️⁰_1|GM|NF"
+    network: ws
+    password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+    port: 443
+    server: ct.877774.xyz
+    skip-cert-verify: true
+    sni: cm22-bgphhh.pages.dev
+    type: trojan
+    udp: true
+    ws-opts:
+      headers:
+        User-Agent: >-
+          Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile
+          Safari/537.36
+      path: >-
+        /hot/proxyip=45.196.239.151,167.253.153.161,45.196.239.238,45.196.238.248,45.196.238.145,223.165.4.57,85.237.207.19,167.253.153.80
+  - client-fingerprint: chrome
+    encryption: none
+    http-opts:
+      headers: {}
+      path:
+        - /
+    name: "\U0001F1F3\U0001F1F1NL²_5|2%|YT"
+    network: tcp
+    port: 443
+    reality-opts:
+      public-key: YW-C1ihJAmuzFtvNLUggNlEh86DQm8jvfrJ-wMj7XQY
+      short-id: 5bfa0c
+    server: nl1.cyphervpn.pro
+    tls: true
+    type: vless
+    udp: true
+    uuid: f7bae22e-20ab-11f1-835c-0242ac110002
+    xudp: true
+    servername: nl1.cyphervpn.pro
+  - name: "\U0001F3F4‍☠_13206.123.156.222:4439|sinspired/subs-check"
+    password: ''
+    port: 4439
+    server: 206.123.156.222
+    skip-cert-verify: true
+    type: socks5
+    username: ''
+  - client-fingerprint: chrome
+    delay: 924
+    name: "\U0001F1F0\U0001F1F7KR⁻¹_6|GM|YT|NF|D+|[广播|机房]"
     network: ws
     password: trojan
-    port: 28006
-    server: 38.83.41.89
+    port: 29999
+    server: 59.20.121.139
     skip-cert-verify: true
     sni: jflsjlaf.pages.dev
     type: trojan
@@ -437,738 +1599,42 @@ proxies:
         Host: jflsjlaf.pages.dev
       max-early-data: 2560
       path: /
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1F8\U0001F1ECSG²_1|GPT|NF|X"
-    network: ws
-    port: 16618
-    server: m.cnmjin.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: d95d95c5-8222-43a8-a7f9-ab2b1be317a6
-    ws-opts:
-      headers:
-        Host: 8f0265a9fe8497203bee1c343489f105.mobgslb.tbcache.com
-      path: /
-    xudp: true
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1EB\U0001F1F7FR²_2|70%|[原生|机房]"
-    network: ws
-    port: 16645
-    server: m.cnmjin.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: 8fe47794-bb25-446c-a1f7-7408a1d0b9c3
-    ws-opts:
-      headers:
-        Host: 7b30e34ac69c2cef7dbe9bd6e2484f6f.mobgslb.tbcache.com
-      path: /
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1F3\U0001F1F1NL¹⁺_1|7%|D+|X|History|[广播|机房]"
-    network: ws
-    port: 443
-    server: 13.200.192.197
-    tls: true
-    type: vless
-    udp: true
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    ws-opts:
-      headers:
-        Host: cloudflare-vless-trojan.lyqnihao.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/54.0.2840.99 Safari/537.36
-      path: "/?ed=2560&Telegram\U0001F1E8\U0001F1F3 @WangCai2"
-    xudp: true
-    servername: cloudflare-vless-trojan.lyqnihao.dpdns.org
-  - name: "\U0001F1F7\U0001F1FARU²_1|X|History"
-    password: ''
-    port: 3128
-    server: 85.198.96.242
-    skip-cert-verify: true
-    tls: false
-    type: http
-    username: ''
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE¹-SG⁰_2|sinspired/subs-check"
-    network: ws
-    port: 443
-    server: 165.232.73.226
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.chinat.eu.cc
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.67 Safari/537.36
-      path: /danfeng
-    xudp: true
-    servername: snippet.chinat.eu.cc
-  - cipher: none
-    name: "\U0001F3F4‍☠_3\U0001F1E9\U0001F1EADE¹-JP⁰_1|sinspired/subs-check|History"
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: mfvpn.fuchen.indevs.in
-      mode: websocket
-      mux: false
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
-      tls: true
-    port: 443
-    server: sub.danfeng.eu.org
-    type: ss
-    udp: true
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1EB\U0001F1F7FR²_3|GPT|X"
-    network: ws
-    port: 16645
-    server: t.cnmjcn.cyou
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: 8fe47794-bb25-446c-a1f7-7408a1d0b9c3
-    ws-opts:
-      headers:
-        Host: 7b30e34ac69c2cef7dbe9bd6e2484f6f.mobgslb.tbcache.com
-      path: /
-  - client-fingerprint: chrome
-    delay: 1480
-    name: "\U0001F1F3\U0001F1F1NL⁻¹_3"
-    network: ws
-    password: trojan
-    port: 8444
-    server: 152.53.104.142
-    skip-cert-verify: true
-    sni: jflsjlaf.pages.dev
-    type: trojan
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: jflsjlaf.pages.dev
-      max-early-data: 2560
-      path: /
-  - encryption: none
-    name: "\U0001F1FA\U0001F1F8US²_3|GPT|X|History"
-    network: ws
-    port: 443
-    server: 1-p-6-h-p.1no.ccwu.cc
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    uuid: ee8bc706-b0be-4053-944e-710f2697b022
-    ws-opts:
-      headers:
-        Host: 1-p-6-h-p.1no.ccwu.cc
-      path: /7QbB9t8n6kQaEnWsy5Crj
-    servername: 1-p-6-h-p.1no.ccwu.cc
-  - client-fingerprint: qq
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1FA\U0001F1F8US²_4|X|History"
-    network: tcp
-    port: 10121
-    reality-opts:
-      public-key: 4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg
-      short-id: 9c2a7d4e5f18b6a3
-    server: 150.241.83.67
-    tls: true
-    type: vless
-    udp: true
-    uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
-    xudp: true
-    servername: apple.com
-  - client-fingerprint: chrome
-    name: "\U0001F1F3\U0001F1F1NL²_3|38%|X"
-    password: IL37892054
-    port: 443
-    server: upright-rhino.rooster465.autos
-    skip-cert-verify: false
-    sni: upright-rhino.rooster465.autos
-    type: trojan
-    udp: true
-    network: tcp
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: '1000'
-    name: "\U0001F1E9\U0001F1EADE²_4|0%|GPT|YT-CN|TK|NF|D+|X|Succeed|[广播|商宽]"
-    port: 54177
-    protocol: udp
-    server: 5.83.129.90
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: '500'
-  - name: "\U0001F1F0\U0001F1F7KR²_1|History"
-    password: ''
-    port: 1090
-    server: 121.169.46.116
-    skip-cert-verify: true
-    type: socks5
-    username: Og%3D%3D
-  - name: "\U0001F3F4‍☠_4206.123.156.178:4049|sinspired/subs-check"
-    password: ''
-    port: 4049
-    server: 206.123.156.178
-    skip-cert-verify: true
-    type: socks5
-    username: ''
-  - client-fingerprint: chrome
-    encryption: none
-    flow: xtls-rprx-vision
-    name: "\U0001F1EF\U0001F1F5JP²_2|GPT|X|sinspired/subs-check"
-    network: tcp
-    port: 443
-    reality-opts:
-      _spider-x: /
-      public-key: Cv7khsXDblOJONTX99gBPIlG7ph7nMMrQBiay8kFDXE
-      short-id: '42'
-    server: tokyo.high-speed-test-56424.me
-    skip-cert-verify: false
-    tls: true
-    type: vless
-    uuid: 28455c79-1165-46a2-a1a9-ead96ad9c5cb
-    servername: aws.amazon.com
-  - client-fingerprint: randomized
-    encryption: none
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1F8\U0001F1ECSG²_2|sinspired/subs-check"
-    network: tcp
-    port: 5443
-    reality-opts:
-      public-key: keHhPKz4xvYjdDqWvhqDUduBtjer2G8fPKdd07bOtXQ
-      short-id: 681a5030d68c9ac2
-    server: 188.225.56.173
-    tls: true
-    type: vless
-    udp: true
-    uuid: d563d4ae-99f3-468d-9b9f-d579288dfd29
-    xudp: true
-    servername: api-maps.yandex.ru
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F1F3\U0001F1F1NL²_4|X"
+    name: "\U0001F1FA\U0001F1F8US²_16|8%|GM|YT|TK|NF|D+|sinspired/subs-check|[原生|住宅拨号]"
     network: tcp
-    port: 443
+    port: 10001
     reality-opts:
-      public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-      short-id: 9eff19e0405a
-    server: dns.dressforida.monster
+      public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
+      short-id: fb2c6678
+    server: 156.229.161.107
     tls: true
     type: vless
     udp: true
-    uuid: 1ebb7caf-8704-48de-adbb-30b0b821c650
-    servername: www.microsoft.com
-  - name: "\U0001F1FA\U0001F1F8US²_5|X|sinspired/subs-check"
-    password: ''
-    port: 4049
-    server: 206.123.156.177
-    skip-cert-verify: true
-    type: socks5
-    username: ''
-  - name: "\U0001F1F3\U0001F1F1NL⁻¹_4|NF|History"
-    network: ws
-    port: 443
-    server: 162.159.44.142
-    tls: true
-    type: vless
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - cipher: 2022-blake3-aes-256-gcm
-    name: "\U0001F1EF\U0001F1F5JP²_3|YT|History"
-    password: >-
-      mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-    port: 14628
-    server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
-    type: ss
-    udp: true
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE⁻¹_3"
-    network: ws
-    port: 443
-    server: 20.67.254.104
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.chinat.eu.cc
-      path: /danfeng
-    servername: snippet.chinat.eu.cc
-  - name: "\U0001F1EB\U0001F1EEFI²_1|sinspired/subs-check"
-    password: ''
-    port: 6364
-    server: 206.123.156.181
-    skip-cert-verify: true
-    type: socks5
-    username: ''
-  - client-fingerprint: chrome
-    flow: xtls-rprx-vision
-    http-opts:
-      headers: {}
-      path:
-        - /
-    name: "\U0001F1EB\U0001F1EEFI²_2|sinspired/subs-check"
-    network: tcp
-    port: 443
-    reality-opts:
-      public-key: FhGGjEfqkriEdaxTrLyL4nacCAQpl5nXcJkdmEJ7FlE
-      short-id: b518ee849b8d26db
-    server: ru-1.124515.xyz
-    tls: true
-    type: vless
-    udp: true
-    uuid: a55a1cb4-cdb3-43db-9095-a8321ca1e9ad
+    uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
     xudp: true
-    servername: ru-1.124515.xyz
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F3F4‍☠_5\U0001F1F8\U0001F1ECSG²_11|X|History"
-    network: ws
-    port: 2053
-    server: 217.60.37.196
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.casacam.net
-      path: /danfeng
-    servername: snippet.danfeng.casacam.net
-  - client-fingerprint: chrome
-    delay: 1805
-    name: "\U0001F1F8\U0001F1EASE⁻¹_1|Succeed"
-    network: ws
-    password: trojan
-    port: 12000
-    server: 207.127.89.90
-    skip-cert-verify: true
-    sni: jflsjlaf.pages.dev
-    type: trojan
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: jflsjlaf.pages.dev
-      max-early-data: 2560
-      path: /
-  - alpn:
-      - http/1.1
-    client-fingerprint: random
-    name: "\U0001F1E9\U0001F1EADE⁻¹_4|sinspired/subs-check"
-    network: ws
-    port: 443
-    server: 46.101.146.53
-    tls: true
-    type: vless
-    udp: true
-    uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-    ws-opts:
-      headers:
-        Host: snippet.danfeng.casacam.net
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/63.0.3239.84 Safari/537.36
-      path: /danfeng
-    xudp: true
-    servername: snippet.danfeng.casacam.net
-  - cipher: aes-256-cfb
-    name: "\U0001F1FB\U0001F1F3VN²_7|GPT⁺|GM|YT-US|X|Succeed"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.154.247
-    type: ss
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1FA\U0001F1F8US¹-TR⁰_1|X|Succeed"
-    network: ws
-    port: 443
-    server: 172.64.155.209
-    tls: true
-    type: vless
-    udp: true
-    uuid: 3c36eadb-747a-4166-8db0-23fec9883ea2
-    ws-opts:
-      headers:
-        Host: harmony-501.pages.dev
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-          Chrome/46.0.2490.71 Safari/537.36
-      path: '/socks5://128.140.46.169:13482'
-    xudp: true
-    servername: harmony-501.pages.dev
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0HK²_1|X"
-    network: ws
-    port: 16632
-    server: t.cnmjcn.cyou
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-    ws-opts:
-      headers:
-        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-      path: /
-  - name: "\U0001F3F4‍☠_6206.123.156.176:4152|X|sinspired/subs-check"
+    servername: www.icloud.com
+  - name: "\U0001F1E8\U0001F1E6CA²_1|14%|GPT⁺|GM|YT|X|sinspired/subs-check|[原生|机房]"
     password: ''
-    port: 4152
+    port: 12032
     server: 206.123.156.176
     skip-cert-verify: true
     type: socks5
     username: ''
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1F3\U0001F1F1NL²_5|Succeed"
-    network: tcp
-    port: 2012
-    reality-opts:
-      public-key: SAAA12X48mYw2aoV_l8ep_vFpYxJZCKz5c-ps7xd7lU
-      short-id: 938015b35f161374
-    server: 188.253.24.201
-    tls: true
-    type: vless
-    udp: true
-    uuid: a1f1933f-6152-4bf4-8cb1-742cade818c8
-    xudp: true
-    servername: yahoo.com
-  - client-fingerprint: chrome
-    name: "\U0001F1F3\U0001F1F1NL²_6|X|sinspired/subs-check|[广播|机房]"
-    network: raw
-    password: IL37892054
-    port: 443
-    server: upright-rhino.rooster465.autos
-    skip-cert-verify: false
-    sni: upright-rhino.rooster465.autos
-    type: trojan
-    udp: true
-  - name: "\U0001F1F3\U0001F1F1NL⁻¹_5|D+"
-    network: ws
-    port: 443
-    server: 162.159.48.142
-    tls: true
-    type: vless
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - name: "\U0001F1F3\U0001F1F1NL⁻¹_6|History"
-    network: ws
-    port: 443
-    server: 104.18.40.56
-    tls: true
-    type: vless
-    uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-    ws-opts:
-      headers:
-        Host: r.icy.de5.net
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    servername: r.icy.de5.net
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F3F4‍☠_7\U0001F525Join+Telegram:@Farah_VPN\U0001F7E3-3471|X"
-    network: ws
-    port: 443
-    server: 90.156.254.74
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    ws-opts:
-      headers:
-        Host: sni.111000.v6.navy
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/55.0.2883.87 Safari/537.36
-      path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
-    xudp: true
-    servername: sni.111000.v6.navy
-  - name: "\U0001F1FA\U0001F1F8US²_6|X|sinspired/subs-check"
+  - name: "\U0001F1E9\U0001F1EADE²_7|GPT|X|History|[原生|机房]"
     password: ''
     port: 1080
-    server: 68.64.179.186
+    server: 85.198.96.242
     skip-cert-verify: true
     type: socks5
     username: ''
-  - name: "\U0001F1FA\U0001F1F8US²_7|Succeed"
+  - name: "\U0001F3F4‍☠_14206.123.156.201:26877|sinspired/subs-check"
     password: ''
-    port: 8888
-    server: 45.22.209.157
+    port: 26877
+    server: 206.123.156.201
     skip-cert-verify: true
-    tls: false
-    type: http
+    type: socks5
     username: ''
-  - encryption: none
-    name: "\U0001F1F3\U0001F1F1NL¹-LV⁰_1|X"
-    network: ws
-    port: 8880
-    server: 104.18.4.46
-    type: vless
-    udp: true
-    uuid: 5b002005-7fb1-413e-8cbd-08e50c87c2ea
-    ws-opts:
-      headers:
-        Host: wetfleagidc-8tsbi8xd-v3.wet-flea-gidc.workers.dev
-        User-Agent: >-
-          Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
-          (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-      path: /
-    xudp: true
-  - cipher: none
-    name: "\U0001F1EF\U0001F1F5JP¹⁺_1|7%|History|[广播|机房]"
-    password: 3e96ef7d-8637-42c2-ac73-75182196e755
-    plugin: v2ray-plugin
-    plugin-opts:
-      host: mfvpn.fuchen.indevs.in
-      mode: websocket
-      mux: false
-      path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
-      tls: true
-    port: 443
-    server: cf.008500.xyz
-    type: ss
-    udp: true
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1EF\U0001F1F5JP²_4|[广播|机房]"
-    network: ws
-    port: 16617
-    server: t.cnmjcn.cyou
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-    ws-opts:
-      headers:
-        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-      path: /
-  - client-fingerprint: chrome
-    name: "\U0001F1EB\U0001F1F7FR⁻¹_1|History"
-    network: ws
-    port: 2053
-    server: 89.117.57.4
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    ws-opts:
-      headers:
-        Host: sni.111000.indevs.in
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/56.0.2924.87 Safari/537.36
-      path: /
-      early-data-header-name: Sec-WebSocket-Protocol
-      max-early-data: 2560
-    xudp: true
-    servername: sni.111000.indevs.in
-  - cipher: aes-256-cfb
-    name: "\U0001F3F4‍☠_8\U0001F1FB\U0001F1F3VN²_2|X|History"
-    password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-    port: 38388
-    server: 103.186.154.178
-    type: ss
-  - client-fingerprint: chrome
-    delay: 1352
-    name: "\U0001F1F0\U0001F1F7KR⁻¹_1"
-    network: ws
-    password: trojan
-    port: 17988
-    server: 175.126.186.39
-    skip-cert-verify: true
-    sni: jflsjlaf.pages.dev
-    type: trojan
-    ws-opts:
-      early-data-header-name: Sec-WebSocket-Protocol
-      headers:
-        Host: jflsjlaf.pages.dev
-      max-early-data: 2560
-      path: /
-  - alterId: '0'
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0HK²_2|YT-CN"
-    network: ws
-    port: 16632
-    server: m.cnmjin.net
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    udp: true
-    uuid: d95d95c5-8222-43a8-a7f9-ab2b1be317a6
-    ws-opts:
-      headers:
-        Host: 8f0265a9fe8497203bee1c343489f105.mobgslb.tbcache.com
-      path: /
-    xudp: true
-  - client-fingerprint: chrome
-    name: "\U0001F1FA\U0001F1F8US²_8|YT|X|History"
-    network: ws
-    port: 443
-    server: 172.67.136.117
-    tls: true
-    type: vless
-    uuid: ad29665d-4900-4e67-8059-a1cec75c7502
-    ws-opts:
-      headers:
-        Host: d-r-r-t.191262.xyz
-      path: /o8vWPYfmwqtIgHpf
-    servername: d-r-r-t.191262.xyz
-  - name: "\U0001F1EC\U0001F1E7GB²_2|History"
-    password: ''
-    port: 443
-    server: 193.36.118.210
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: ''
-  - client-fingerprint: chrome
-    encryption: none
-    name: "\U0001F1F3\U0001F1F1NL¹⁺_2|History|[广播|机房]"
-    network: ws
-    port: 443
-    server: 45.76.198.248
-    tls: true
-    type: vless
-    udp: true
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    ws-opts:
-      headers:
-        Host: cloudflare-vless-trojan.lyqnihao.dpdns.org
-        User-Agent: >-
-          Mozilla/5.0 (Linux; Android 7.0; SM-G610M Build/NRD90M)
-          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile
-          Safari/537.36
-      path: "/?ed=2560&Telegram\U0001F1E8\U0001F1F3 @WangCai2"
-    xudp: true
-    servername: cloudflare-vless-trojan.lyqnihao.dpdns.org
-  - alterId: 0
-    cipher: auto
-    name: "\U0001F1ED\U0001F1F0HK²_3|D+|X|[广播|商宽]"
-    network: ws
-    port: 16622
-    server: t.cnmjcn.cyou
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: 42355be2-af61-4b3b-866c-d3c5ea8748c5
-    ws-opts:
-      headers:
-        Host: febce1d29a8a4c68e016e0bec83fa245.mobgslb.tbcache.com
-      path: /
-  - alpn:
-      - h3
-    congestion-controller: bbr
-    disable-sni: false
-    name: "\U0001F1E9\U0001F1EADE²_5|0%|GPT|YT-CN|TK|D+|X|History|[广播|商宽]"
-    password: dongtaiwang.com
-    port: 10088
-    reduce-rtt: false
-    request-timeout: 0
-    server: ip1.758733.xyz
-    skip-cert-verify: true
-    sni: apple.com
-    type: tuic
-    udp-relay-mode: native
-    uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-    version: 5
-  - client-fingerprint: randomized
-    name: "\U0001F1FA\U0001F1F8US⁻¹_2|D+|History"
-    network: ws
-    password: d0298536-d670-4045-bbb1-ddd5ea68683e
-    port: 443
-    server: www.digitalocean.com
-    skip-cert-verify: false
-    sni: azadnet-5vk.pages.dev
-    type: trojan
-    udp: true
-    ws-opts:
-      headers:
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-          Gecko) Chrome/52.0.2743.116 Safari/537.36
-      path: /azadnet-5vk.pages.dev/?ed=2560&PROT_TYPE=trojan
-  - name: "\U0001F1ED\U0001F1F0HK²_4|2%|D+|[原生|住宅]"
-    password: <password>
-    port: 8443
-    server: 5e10aa15-t9zts0-toa9ad-4w8.hkt.cdnhuawei.com
-    sni: 5e10aa15-t9zts0-toa9ad-4w8.hkt.cdnhuawei.com
-    tls: true
-    type: http
-    username: ba7a37e3-033a-e1ab-06f6-9027aa4630f5
-  - name: "\U0001F1EB\U0001F1F7FR²_4|49%|GPT⁺|TK|X|History|[原生|机房]"
-    password: ''
-    port: 443
-    server: 51.38.191.151
-    skip-cert-verify: true
-    tls: true
-    type: http
-    username: ''
-  - name: "\U0001F3F4‍☠_9⚪\U0001F3F3️_github.com/Ruk1ng001_debf913f|X"
-    network: ws
-    port: 8443
-    server: 57.129.137.243
-    tls: true
-    type: vless
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    ws-opts:
-      headers:
-        Host: sni.111000.indevs.in
-      path: "/?ed=2560&Telegram\U0001F1E8\U0001F1F3@WangCai2"
-    servername: sni.111000.indevs.in
-  - client-fingerprint: chrome
-    name: "\U0001F3F4‍☠_10奥地利_031913029|X|sinspired/subs-check"
-    network: ws
-    port: 2096
-    server: 212.183.88.138
-    tls: true
-    type: vless
-    udp: true
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    ws-opts:
-      headers:
-        Host: sni.111000.indevs.in
-        User-Agent: >-
-          Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-          like Gecko) Chrome/70.0.3538.67 Safari/537.36
-      path: /%3Fed%3D2560%26Telegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2
-    xudp: true
-    servername: sni.111000.indevs.in
 proxy-groups:
   - name: "\U0001F680 节点选择"
     type: select
